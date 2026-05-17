@@ -40,9 +40,9 @@ apis:
     properties:
       - type: Documentation
         url: https://documentation.bamboohr.com/docs
-      - type: API Reference
+      - type: APIReference
         url: https://documentation.bamboohr.com/reference
-      - type: Getting Started
+      - type: GettingStarted
         url: https://documentation.bamboohr.com/docs/getting-started
       - type: Authentication
         url: https://documentation.bamboohr.com/docs/getting-started
@@ -55,9 +55,9 @@ common:
     url: https://documentation.bamboohr.com/docs
   - type: Developer Portal
     url: https://developers.bamboohr.com/
-  - type: API Reference
+  - type: APIReference
     url: https://documentation.bamboohr.com/reference
-  - type: Sign Up
+  - type: SignUp
     url: https://www.bamboohr.com/signup/
   - type: Pricing
     url: https://www.bamboohr.com/pricing/
