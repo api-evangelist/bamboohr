@@ -49,6 +49,10 @@ apis:
       - type: SDKs
         url: https://documentation.bamboohr.com/docs/sdks
 common:
+  - type: GitHubOrganization
+    url: https://github.com/BambooHR
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/bamboohr
   - type: Website
     url: https://www.bamboohr.com/
   - type: Documentation
