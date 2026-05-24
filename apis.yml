@@ -67,6 +67,8 @@ common:
     url: https://www.bamboohr.com/pricing/
   - type: Support
     url: https://help.bamboohr.com/
+  - type: LLMsTxt
+    url: https://developers.bamboohr.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
