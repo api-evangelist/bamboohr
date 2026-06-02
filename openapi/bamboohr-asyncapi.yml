@@ -1,0 +1,271 @@
+asyncapi: '2.6.0'
+info:
+  title: BambooHR Webhooks
+  version: '1.0.0'
+  description: >-
+    AsyncAPI description of the BambooHR webhook surface. BambooHR delivers
+    HTTPS POST callbacks to subscriber-configured URLs when monitored fields
+    on an Employee record change (or when an employee record is created or
+    deleted). Webhooks are configured per monitored field, so a single logical
+    channel is parameterized by the monitored field name. Two payload styles
+    are supported: an event-based payload (with a `type`, `timestamp`, and a
+    `data` object carrying `companyId`, `employeeId`, and `changedFields`),
+    and a field-based payload (with an `employees` array carrying `id`,
+    `action`, `timestamp`, `changedFields`, and `fields`).
+  contact:
+    name: API Evangelist
+    email: kin@apievangelist.com
+  license:
+    name: Proprietary
+    url: https://www.bamboohr.com/legal/terms-of-service
+  externalDocs:
+    description: BambooHR Webhooks documentation
+    url: https://documentation.bamboohr.com/docs/webhooks
+
+defaultContentType: application/json
+
+servers:
+  subscriber:
+    url: '{subscriberUrl}'
+    protocol: https
+    description: >-
+      The HTTPS endpoint the subscriber registers in BambooHR. BambooHR sends
+      POST requests to this URL. HTTP is not supported.
+    variables:
+      subscriberUrl:
+        description: Fully-qualified HTTPS URL hosted by the subscriber.
+        default: https://example.com/bamboohr/webhook
+
+channels:
+  employees/{monitoredField}:
+    description: >-
+      A single logical webhook channel for employee field-change notifications.
+      A separate webhook configuration is created in BambooHR per monitored
+      field; the `monitoredField` parameter identifies which field's change
+      triggered the delivery (e.g. `firstName`, `jobTitle`, `department`,
+      `payRate`).
+    parameters:
+      monitoredField:
+        description: >-
+          The BambooHR employee field being monitored by this webhook
+          configuration. Standard fields include First Name, Last Name, Job
+          Title, Department, Division, Location, Hire Date, Employment Status,
+          Pay Rate, Pay Type, Pay Schedule, Reporting To, Compensation,
+          Address Line 1, City, State, Zip Code, Country, Birth Date, Gender,
+          Marital Status, SSN, and custom fields (excluding custom table
+          fields).
+        schema:
+          type: string
+          example: firstName
+    publish:
+      operationId: receiveEmployeeFieldChange
+      summary: Receive an employee field-change webhook delivery from BambooHR.
+      description: >-
+        BambooHR POSTs an event-based or field-based payload to the subscriber
+        URL whenever a monitored field changes on an employee record, or when
+        an employee record is created or deleted. The subscriber must respond
+        with a 2xx status; non-2xx or 5xx responses are retried up to 5 times
+        with exponential backoff (immediate, 5m, 10m, 20m, 40m) plus jitter.
+      bindings:
+        http:
+          type: request
+          method: POST
+          bindingVersion: '0.3.0'
+      message:
+        oneOf:
+          - $ref: '#/components/messages/EventBasedWebhook'
+          - $ref: '#/components/messages/FieldBasedWebhook'
+
+components:
+  messages:
+    EventBasedWebhook:
+      name: EventBasedWebhook
+      title: Event-Based Webhook Delivery
+      summary: >-
+        Compact event-based payload describing a single employee lifecycle
+        or field-change event.
+      contentType: application/json
+      headers:
+        $ref: '#/components/schemas/WebhookHeaders'
+      payload:
+        $ref: '#/components/schemas/EventBasedPayload'
+      examples:
+        - name: employeeUpdated
+          summary: An `employee.updated` event with a single changed field.
+          payload:
+            type: employee.updated
+            timestamp: '2026-01-31T18:42:00+0000'
+            data:
+              companyId: '12345'
+              employeeId: '67890'
+              changedFields:
+                - firstName
+        - name: employeeCreated
+          summary: An `employee.created` event.
+          payload:
+            type: employee.created
+            timestamp: '2026-01-31T18:42:00+0000'
+            data:
+              companyId: '12345'
+              employeeId: '67890'
+        - name: employeeDeleted
+          summary: An `employee.deleted` event.
+          payload:
+            type: employee.deleted
+            timestamp: '2026-01-31T18:42:00+0000'
+            data:
+              companyId: '12345'
+              employeeId: '67890'
+
+    FieldBasedWebhook:
+      name: FieldBasedWebhook
+      title: Field-Based Webhook Delivery
+      summary: >-
+        Field-based payload describing one or more employee records whose
+        monitored fields changed (or which were created/deleted). The
+        `fields` object carries the current values of all configured post
+        fields, and `changedFields` lists which monitored fields triggered
+        the delivery.
+      contentType: application/json
+      headers:
+        $ref: '#/components/schemas/WebhookHeaders'
+      payload:
+        $ref: '#/components/schemas/FieldBasedPayload'
+      examples:
+        - name: employeeUpdated
+          summary: A field-based `Updated` delivery with one changed field.
+          payload:
+            employees:
+              - action: Updated
+                changedFields:
+                  - First Name
+                fields:
+                  First Name: Bryony
+                id: '12345'
+                timestamp: '2026-01-31T18:42:00+0000'
+
+  schemas:
+    WebhookHeaders:
+      type: object
+      description: >-
+        HTTP headers sent by BambooHR with every webhook delivery. The
+        signature is an SHA-256 HMAC over the raw request body plus the
+        timestamp, keyed with the subscriber's private key, and should be
+        verified before processing the payload.
+      properties:
+        X-BambooHR-Timestamp:
+          type: string
+          description: Timestamp at which BambooHR issued the request.
+          example: '2026-01-31T18:42:00+0000'
+        X-BambooHR-Signature:
+          type: string
+          description: >-
+            SHA-256 HMAC signature of the raw request body concatenated with
+            the timestamp, keyed with the subscriber's private key.
+          example: 'a3f1c9e2b4d5...'
+      required:
+        - X-BambooHR-Timestamp
+        - X-BambooHR-Signature
+
+    EventBasedPayload:
+      type: object
+      description: >-
+        Event-based webhook body. One payload describes a single
+        employee.created, employee.updated, or employee.deleted event.
+      required:
+        - type
+        - timestamp
+        - data
+      properties:
+        type:
+          type: string
+          description: The event type that triggered the webhook.
+          enum:
+            - employee.created
+            - employee.updated
+            - employee.deleted
+          example: employee.updated
+        timestamp:
+          type: string
+          description: ISO 8601 timestamp at which the event occurred.
+          example: '2026-01-31T18:42:00+0000'
+        data:
+          type: object
+          required:
+            - companyId
+            - employeeId
+          properties:
+            companyId:
+              type: string
+              description: BambooHR-assigned identifier of the company.
+              example: '12345'
+            employeeId:
+              type: string
+              description: BambooHR employee identifier whose record changed.
+              example: '67890'
+            changedFields:
+              type: array
+              description: >-
+                List of monitored field names that changed. Present only on
+                `employee.updated` events.
+              items:
+                type: string
+              example:
+                - firstName
+
+    FieldBasedPayload:
+      type: object
+      description: >-
+        Field-based webhook body. Carries one or more employee records and
+        their changed fields plus the current values of all configured post
+        fields. Multiple employees may be batched into a single delivery.
+      required:
+        - employees
+      properties:
+        employees:
+          type: array
+          description: One entry per employee record included in this delivery.
+          items:
+            $ref: '#/components/schemas/FieldBasedEmployee'
+
+    FieldBasedEmployee:
+      type: object
+      required:
+        - id
+        - action
+        - timestamp
+      properties:
+        id:
+          type: string
+          description: BambooHR employee identifier.
+          example: '12345'
+        action:
+          type: string
+          description: The change type that triggered the delivery.
+          enum:
+            - Created
+            - Updated
+            - Deleted
+          example: Updated
+        timestamp:
+          type: string
+          description: ISO 8601 timestamp at which the change occurred.
+          example: '2026-01-31T18:42:00+0000'
+        changedFields:
+          type: array
+          description: >-
+            Names of monitored fields that changed. Empty for Created and
+            Deleted actions; populated for Updated actions.
+          items:
+            type: string
+          example:
+            - First Name
+        fields:
+          type: object
+          description: >-
+            Current values of all configured post fields for the employee.
+            Field names match either the BambooHR field name or a subscriber-
+            configured alias. Empty for Created and Deleted actions.
+          additionalProperties: true
+          example:
+            First Name: Bryony

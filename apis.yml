@@ -19,7 +19,7 @@ tags:
   - Performance Management
 url: https://raw.githubusercontent.com/api-evangelist/bamboohr/refs/heads/main/apis.yml
 created: '2026-05-11'
-modified: '2026-05-11'
+modified: '2026-05-30'
 specificationVersion: '0.19'
 apis:
   - aid: bamboohr:rest-api
@@ -48,6 +48,34 @@ apis:
         url: https://documentation.bamboohr.com/docs/getting-started
       - type: SDKs
         url: https://documentation.bamboohr.com/docs/sdks
+  - aid: bamboohr:webhooks
+    name: BambooHR Webhooks
+    description: >-
+      Event-driven webhook surface for BambooHR. Webhooks fire when monitored
+      fields change on Employee records (and when employee records are created
+      or deleted). Subscribers register an HTTPS URL per monitored field;
+      BambooHR POSTs an event-based or field-based JSON payload carrying the
+      employee identifier and the list of changed fields, signed with an
+      SHA-256 HMAC.
+    humanURL: https://documentation.bamboohr.com/docs/webhooks
+    tags:
+      - Webhooks
+      - Events
+      - Employees
+      - HRIS
+    properties:
+      - type: Documentation
+        url: https://documentation.bamboohr.com/docs/webhooks
+      - type: AsyncAPI
+        url: https://raw.githubusercontent.com/api-evangelist/bamboohr/refs/heads/main/openapi/bamboohr-asyncapi.yml
+      - type: Documentation
+        url: https://documentation.bamboohr.com/docs/event-based-webhooks
+      - type: Documentation
+        url: https://documentation.bamboohr.com/docs/field-based-webhooks
+      - type: Documentation
+        url: https://documentation.bamboohr.com/docs/global-webhooks
+      - type: Documentation
+        url: https://documentation.bamboohr.com/docs/permissioned-webhooks
 common:
   - type: GitHubOrganization
     url: https://github.com/BambooHR
