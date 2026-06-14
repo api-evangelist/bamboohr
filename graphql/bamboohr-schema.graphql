@@ -1,0 +1,844 @@
+"""
+BambooHR GraphQL Schema
+Conceptual schema derived from the BambooHR REST API data model.
+Reference: https://documentation.bamboohr.com/reference/
+"""
+
+scalar Date
+scalar DateTime
+scalar Upload
+
+# ─── Company & Structure ────────────────────────────────────────────────────
+
+type Company {
+  id: ID!
+  name: String!
+  subCompanies: [SubCompany!]
+  departments: [Department!]
+  locations: [Location!]
+  divisions: [Division!]
+  payGroups: [PayGroup!]
+  paySchedules: [PaySchedule!]
+  holidayLists: [HolidayList!]
+  webhooks: [Webhook!]
+  apiKeys: [APIKey!]
+}
+
+type SubCompany {
+  id: ID!
+  name: String!
+  company: Company!
+  employees: [Employee!]
+}
+
+type Department {
+  id: ID!
+  name: String!
+  company: Company!
+  employees: [Employee!]
+}
+
+type Location {
+  id: ID!
+  name: String!
+  street1: String
+  street2: String
+  city: String
+  state: String
+  zip: String
+  country: String
+  timezone: String
+  employees: [Employee!]
+}
+
+type Division {
+  id: ID!
+  name: String!
+  company: Company!
+  employees: [Employee!]
+}
+
+# ─── Employee ───────────────────────────────────────────────────────────────
+
+type Employee {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  preferredName: String
+  displayName: String
+  gender: String
+  dateOfBirth: Date
+  ssn: String
+  sin: String
+  address1: String
+  address2: String
+  city: String
+  state: String
+  zipCode: String
+  country: String
+  workPhone: String
+  workPhoneExtension: String
+  mobilePhone: String
+  homePhone: String
+  workEmail: String!
+  homeEmail: String
+  hireDate: Date
+  originalHireDate: Date
+  terminationDate: Date
+  lastChanged: DateTime
+  status: String
+  photoUrl: String
+  department: Department
+  division: Division
+  location: Location
+  jobTitle: String
+  supervisor: Employee
+  reportsTo: Employee
+  flsaCode: String
+  payType: String
+  payRate: Float
+  payPeriod: String
+  payGroup: PayGroup
+  fields: [EmployeeField!]
+  customFields: [CustomField!]
+  employmentStatus: EmploymentStatus
+  jobInfo: [JobInfo!]
+  compensationHistory: [Compensation!]
+  timeOffBalances: [TimeOffBalance!]
+  timeOffRequests: [TimeOffRequest!]
+  emergencyContacts: [EmergencyContact!]
+  benefits: [BenefitEnrollment!]
+  documents: [Document!]
+  trainingRecords: [TrainingRecord!]
+  performanceReviews: [PerformanceReview!]
+  goals: [Goal!]
+  assets: [Asset!]
+  onboardingPackets: [OnboardingPacket!]
+  eeo: EEO
+}
+
+type EmployeeField {
+  id: ID!
+  name: String!
+  type: String!
+  value: String
+  alias: String
+  deprecated: Boolean
+}
+
+type EmergencyContact {
+  id: ID!
+  employee: Employee!
+  name: String!
+  relationship: String
+  homePhone: String
+  workPhone: String
+  mobilePhone: String
+  email: String
+  isPrimary: Boolean
+}
+
+type EEO {
+  id: ID!
+  employee: Employee!
+  ethnicity: String
+  gender: String
+  veteranStatus: String
+  disabilityStatus: String
+}
+
+# ─── Employment Status ───────────────────────────────────────────────────────
+
+type EmploymentStatus {
+  id: ID!
+  employee: Employee!
+  status: String!
+  startDate: Date!
+  comment: String
+}
+
+# ─── Job ────────────────────────────────────────────────────────────────────
+
+type Job {
+  id: ID!
+  title: String!
+  department: Department
+  location: Location
+  openings: [JobOpening!]
+}
+
+type JobInfo {
+  id: ID!
+  employee: Employee!
+  date: Date!
+  jobTitle: String
+  reportsTo: Employee
+  department: Department
+  location: Location
+  division: Division
+  paySchedule: PaySchedule
+  payType: String
+  exempt: String
+  payRate: Float
+  payPeriod: String
+}
+
+# ─── Compensation ───────────────────────────────────────────────────────────
+
+type Compensation {
+  id: ID!
+  employee: Employee!
+  startDate: Date!
+  type: String
+  paidPer: String
+  payRate: Float
+  payType: String
+  paySchedule: PaySchedule
+  changeReason: String
+  comment: String
+}
+
+type CompensationHistory {
+  employee: Employee!
+  records: [Compensation!]!
+}
+
+# ─── Benefits ───────────────────────────────────────────────────────────────
+
+type Benefit {
+  id: ID!
+  name: String!
+  type: String!
+  plan: BenefitPlan
+  group: BenefitGroup
+  enrollments: [BenefitEnrollment!]
+}
+
+type BenefitPlan {
+  id: ID!
+  name: String!
+  benefit: Benefit!
+  carrier: String
+  startDate: Date
+  endDate: Date
+  employeeCost: Float
+  employerCost: Float
+}
+
+type BenefitGroup {
+  id: ID!
+  name: String!
+  company: Company!
+  benefits: [Benefit!]
+}
+
+type BenefitEnrollment {
+  id: ID!
+  employee: Employee!
+  benefit: Benefit!
+  plan: BenefitPlan
+  startDate: Date
+  endDate: Date
+  electionType: String
+  employeeCost: Float
+  employerCost: Float
+  coverageAmount: Float
+  enrolled: Boolean
+}
+
+# ─── Time Off ───────────────────────────────────────────────────────────────
+
+type TimeOff {
+  id: ID!
+  name: String!
+  type: TimeOffType!
+  policy: TimeOffPolicy
+  accruals: [Accrual!]
+}
+
+type TimeOffRequest {
+  id: ID!
+  employee: Employee!
+  type: TimeOffType!
+  status: TimeOffRequestStatus!
+  startDate: Date!
+  endDate: Date!
+  amount: Float
+  notes: String
+  created: DateTime
+  modified: DateTime
+  approver: Employee
+  actions: [TimeOffAction!]
+}
+
+enum TimeOffRequestStatus {
+  REQUESTED
+  APPROVED
+  DENIED
+  SUPERCEDED
+  CANCELLED
+}
+
+type TimeOffAction {
+  date: DateTime!
+  employeeId: String
+  note: String
+  action: String
+}
+
+type TimeOffType {
+  id: ID!
+  name: String!
+  units: String
+  color: String
+  accrualCalendar: String
+  accrualPeriod: String
+  accrualHours: Float
+  maxAccrual: Float
+  rolloverHours: Float
+  policy: TimeOffPolicy
+}
+
+type TimeOffBalance {
+  id: ID!
+  employee: Employee!
+  timeOffType: TimeOffType!
+  balance: Float
+  usedYearToDate: Float
+  balanceDate: Date
+}
+
+type TimeOffPolicy {
+  id: ID!
+  name: String!
+  type: TimeOffType!
+  accruals: [Accrual!]
+  employees: [Employee!]
+}
+
+type Accrual {
+  id: ID!
+  policy: TimeOffPolicy!
+  accrualDate: Date
+  amount: Float
+  note: String
+}
+
+# ─── Payroll ────────────────────────────────────────────────────────────────
+
+type Payroll {
+  id: ID!
+  employee: Employee!
+  payPeriodStart: Date
+  payPeriodEnd: Date
+  payDate: Date
+  status: String
+  paystubs: [PaystubDetails!]
+}
+
+type PaystubDetails {
+  id: ID!
+  payroll: Payroll!
+  grossPay: Float
+  netPay: Float
+  federalIncomeTax: Float
+  stateIncomeTax: Float
+  socialSecurity: Float
+  medicare: Float
+  earnings: [EarningCode!]
+  deductions: [Deduction!]
+}
+
+type EarningCode {
+  id: ID!
+  code: String!
+  name: String!
+  amount: Float
+  hours: Float
+  type: String
+}
+
+type Deduction {
+  id: ID!
+  name: String!
+  amount: Float
+  type: String
+  category: String
+  employeeContribution: Float
+  employerContribution: Float
+}
+
+type PayGroup {
+  id: ID!
+  name: String!
+  company: Company!
+  employees: [Employee!]
+}
+
+type PaySchedule {
+  id: ID!
+  name: String!
+  frequency: String
+  payPeriodStart: Date
+  payPeriodEnd: Date
+  payDate: Date
+  payGroup: PayGroup
+}
+
+# ─── Applicant Tracking ──────────────────────────────────────────────────────
+
+type Applicant {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  email: String
+  phone: String
+  address: String
+  city: String
+  state: String
+  zip: String
+  country: String
+  linkedIn: String
+  website: String
+  source: String
+  applications: [Application!]
+}
+
+type Application {
+  id: ID!
+  applicant: Applicant!
+  jobOpening: JobOpening!
+  status: ApplicationStatus!
+  appliedDate: Date
+  rating: String
+  refererName: String
+  referredBy: String
+  comments: String
+  resume: Document
+}
+
+type ApplicationStatus {
+  id: ID!
+  label: String!
+  category: String
+  application: Application
+}
+
+type JobOpening {
+  id: ID!
+  job: Job!
+  title: String!
+  status: String
+  openDate: Date
+  closedDate: Date
+  department: Department
+  location: Location
+  hiringLead: Employee
+  applications: [Application!]
+  numberOfOpenings: Int
+  description: String
+}
+
+# ─── Onboarding & Offboarding ───────────────────────────────────────────────
+
+type OnboardingTask {
+  id: ID!
+  name: String!
+  description: String
+  dueDate: Date
+  assignedTo: Employee
+  completedDate: Date
+  status: String
+  packet: OnboardingPacket
+}
+
+type OnboardingPacket {
+  id: ID!
+  name: String!
+  employee: Employee!
+  tasks: [OnboardingTask!]
+  status: String
+  assignedDate: Date
+  completedDate: Date
+}
+
+type OffboardingTask {
+  id: ID!
+  name: String!
+  description: String
+  dueDate: Date
+  assignedTo: Employee
+  completedDate: Date
+  status: String
+  employee: Employee
+}
+
+# ─── Training ───────────────────────────────────────────────────────────────
+
+type Training {
+  id: ID!
+  name: String!
+  description: String
+  category: TrainingCategory
+  dueDate: Date
+  linkUrl: String
+  allowEmployees: Boolean
+  required: Boolean
+  completionDate: Date
+}
+
+type TrainingRecord {
+  id: ID!
+  employee: Employee!
+  training: Training!
+  completed: Boolean
+  completionDate: Date
+  notes: String
+  dueDate: Date
+}
+
+type TrainingCategory {
+  id: ID!
+  name: String!
+  trainings: [Training!]
+}
+
+# ─── Performance ─────────────────────────────────────────────────────────────
+
+type Performance {
+  id: ID!
+  employee: Employee!
+  reviews: [PerformanceReview!]
+  goals: [Goal!]
+}
+
+type PerformanceReview {
+  id: ID!
+  employee: Employee!
+  reviewer: Employee
+  reviewDate: Date
+  status: String
+  rating: Float
+  notes: String
+  goals: [Goal!]
+}
+
+type Goal {
+  id: ID!
+  employee: Employee!
+  title: String!
+  description: String
+  dueDate: Date
+  status: String
+  percentComplete: Int
+  alignment: String
+  milestones: [GoalMilestone!]
+  review: PerformanceReview
+}
+
+type GoalMilestone {
+  id: ID!
+  goal: Goal!
+  title: String!
+  dueDate: Date
+  completedDate: Date
+  percentComplete: Int
+}
+
+# ─── Assets ──────────────────────────────────────────────────────────────────
+
+type Asset {
+  id: ID!
+  employee: Employee!
+  assetType: AssetType!
+  serialNumber: String
+  description: String
+  issueDate: Date
+  returnDate: Date
+  notes: String
+}
+
+type AssetType {
+  id: ID!
+  name: String!
+  category: String
+  assets: [Asset!]
+}
+
+# ─── Documents ───────────────────────────────────────────────────────────────
+
+type Document {
+  id: ID!
+  employee: Employee
+  name: String!
+  fileName: String
+  fileSize: Int
+  mimeType: String
+  category: DocumentCategory
+  created: DateTime
+  shareWithEmployee: Boolean
+  url: String
+}
+
+type DocumentCategory {
+  id: ID!
+  name: String!
+  documents: [Document!]
+}
+
+# ─── Calendar & Holidays ─────────────────────────────────────────────────────
+
+type Calendar {
+  id: ID!
+  name: String!
+  company: Company!
+  holidays: [Holiday!]
+}
+
+type Holiday {
+  id: ID!
+  name: String!
+  date: Date!
+  halfDay: Boolean
+  list: HolidayList
+}
+
+type HolidayList {
+  id: ID!
+  name: String!
+  company: Company!
+  holidays: [Holiday!]
+  employees: [Employee!]
+}
+
+# ─── Reports ─────────────────────────────────────────────────────────────────
+
+type Report {
+  id: ID!
+  name: String!
+  type: String
+  fields: [ReportField!]
+  filters: String
+  groupBy: String
+  sortBy: String
+  created: DateTime
+  modified: DateTime
+}
+
+type ReportField {
+  id: ID!
+  name: String!
+  alias: String
+  type: String
+  report: Report
+}
+
+# ─── Custom Fields ────────────────────────────────────────────────────────────
+
+type CustomField {
+  id: ID!
+  name: String!
+  type: String!
+  value: String
+  alias: String
+  category: String
+  employee: Employee
+}
+
+# ─── Webhooks ────────────────────────────────────────────────────────────────
+
+type Webhook {
+  id: ID!
+  name: String!
+  monitorFields: [String!]
+  postFields: [String!]
+  url: String!
+  format: String
+  frequency: WebhookFrequency
+  limit: Int
+  includeCompanyDomain: Boolean
+  events: [WebhookEvent!]
+}
+
+enum WebhookFrequency {
+  IMMEDIATE
+  DAILY
+  WEEKLY
+}
+
+type WebhookEvent {
+  id: ID!
+  webhook: Webhook!
+  eventType: String!
+  employeeId: String
+  fields: [String!]
+  timestamp: DateTime
+  payload: String
+}
+
+# ─── API Keys ─────────────────────────────────────────────────────────────────
+
+type APIKey {
+  id: ID!
+  name: String!
+  key: String
+  company: Company!
+  created: DateTime
+  lastUsed: DateTime
+}
+
+# ─── Root Types ──────────────────────────────────────────────────────────────
+
+type Query {
+  company: Company
+  employee(id: ID!): Employee
+  employees(status: String, departmentId: ID, locationId: ID): [Employee!]
+  department(id: ID!): Department
+  departments: [Department!]
+  location(id: ID!): Location
+  locations: [Location!]
+  division(id: ID!): Division
+  divisions: [Division!]
+  jobInfo(employeeId: ID!): [JobInfo!]
+  compensationHistory(employeeId: ID!): [Compensation!]
+  timeOffRequests(employeeId: ID, status: TimeOffRequestStatus, startDate: Date, endDate: Date): [TimeOffRequest!]
+  timeOffTypes: [TimeOffType!]
+  timeOffBalances(employeeId: ID!): [TimeOffBalance!]
+  benefits: [Benefit!]
+  benefitPlans: [BenefitPlan!]
+  benefitGroups: [BenefitGroup!]
+  benefitEnrollments(employeeId: ID!): [BenefitEnrollment!]
+  payroll(employeeId: ID!, startDate: Date, endDate: Date): [Payroll!]
+  payGroups: [PayGroup!]
+  paySchedules: [PaySchedule!]
+  applicant(id: ID!): Applicant
+  applicants: [Applicant!]
+  application(id: ID!): Application
+  applications(jobOpeningId: ID, status: String): [Application!]
+  jobOpening(id: ID!): JobOpening
+  jobOpenings(status: String): [JobOpening!]
+  onboardingPacket(id: ID!): OnboardingPacket
+  onboardingPackets(employeeId: ID!): [OnboardingPacket!]
+  offboardingTasks(employeeId: ID!): [OffboardingTask!]
+  trainings: [Training!]
+  trainingCategories: [TrainingCategory!]
+  trainingRecords(employeeId: ID!): [TrainingRecord!]
+  performanceReviews(employeeId: ID!): [PerformanceReview!]
+  goals(employeeId: ID!): [Goal!]
+  assets(employeeId: ID!): [Asset!]
+  assetTypes: [AssetType!]
+  documents(employeeId: ID!): [Document!]
+  documentCategories: [DocumentCategory!]
+  holidays(startDate: Date, endDate: Date): [Holiday!]
+  holidayLists: [HolidayList!]
+  reports: [Report!]
+  report(id: ID!): Report
+  webhooks: [Webhook!]
+  webhook(id: ID!): Webhook
+  apiKeys: [APIKey!]
+  subCompanies: [SubCompany!]
+}
+
+type Mutation {
+  createEmployee(input: EmployeeInput!): Employee
+  updateEmployee(id: ID!, input: EmployeeInput!): Employee
+  createTimeOffRequest(input: TimeOffRequestInput!): TimeOffRequest
+  updateTimeOffRequest(id: ID!, status: TimeOffRequestStatus!, note: String): TimeOffRequest
+  createDocument(employeeId: ID!, input: DocumentInput!): Document
+  deleteDocument(id: ID!): Boolean
+  createWebhook(input: WebhookInput!): Webhook
+  updateWebhook(id: ID!, input: WebhookInput!): Webhook
+  deleteWebhook(id: ID!): Boolean
+  createGoal(employeeId: ID!, input: GoalInput!): Goal
+  updateGoal(id: ID!, input: GoalInput!): Goal
+  createTrainingRecord(input: TrainingRecordInput!): TrainingRecord
+  updateTrainingRecord(id: ID!, input: TrainingRecordInput!): TrainingRecord
+  updateBenefitEnrollment(id: ID!, input: BenefitEnrollmentInput!): BenefitEnrollment
+}
+
+# ─── Input Types ─────────────────────────────────────────────────────────────
+
+input EmployeeInput {
+  firstName: String
+  lastName: String
+  preferredName: String
+  gender: String
+  dateOfBirth: Date
+  address1: String
+  address2: String
+  city: String
+  state: String
+  zipCode: String
+  country: String
+  workPhone: String
+  mobilePhone: String
+  homePhone: String
+  workEmail: String
+  homeEmail: String
+  hireDate: Date
+  status: String
+  departmentId: ID
+  locationId: ID
+  divisionId: ID
+  jobTitle: String
+  supervisorId: ID
+  payType: String
+  payRate: Float
+  payPeriod: String
+  payGroupId: ID
+}
+
+input TimeOffRequestInput {
+  employeeId: ID!
+  typeId: ID!
+  startDate: Date!
+  endDate: Date!
+  amount: Float
+  notes: String
+}
+
+input DocumentInput {
+  name: String!
+  file: Upload
+  categoryId: ID
+  shareWithEmployee: Boolean
+}
+
+input WebhookInput {
+  name: String!
+  monitorFields: [String!]!
+  postFields: [String!]
+  url: String!
+  format: String
+  frequency: WebhookFrequency
+  limit: Int
+  includeCompanyDomain: Boolean
+}
+
+input GoalInput {
+  title: String!
+  description: String
+  dueDate: Date
+  status: String
+  percentComplete: Int
+  alignment: String
+}
+
+input TrainingRecordInput {
+  employeeId: ID!
+  trainingId: ID!
+  completed: Boolean
+  completionDate: Date
+  notes: String
+  dueDate: Date
+}
+
+input BenefitEnrollmentInput {
+  benefitId: ID!
+  planId: ID
+  startDate: Date
+  endDate: Date
+  electionType: String
+  employeeCost: Float
+  coverageAmount: Float
+}
