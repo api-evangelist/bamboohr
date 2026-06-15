@@ -1,0 +1,436 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "BambooHR REST API",
+    "version": "v1"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Directory",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get the employee directory",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/directory",
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Get the employee directory"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Employees",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get an employee",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "fields",
+                "value": "",
+                "type": "query",
+                "description": "Comma-separated list of fields to return"
+              }
+            ],
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Get an employee"
+        },
+        {
+          "info": {
+            "name": "Update an employee",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Update an employee"
+        },
+        {
+          "info": {
+            "name": "Add an employee",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Add an employee"
+        },
+        {
+          "info": {
+            "name": "Get rows from a tabular field for an employee",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/:id/tables/:table",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "table",
+                "value": "",
+                "type": "path",
+                "description": "Table name (e.g. jobInfo"
+              }
+            ],
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Get rows from a tabular field for an employee"
+        },
+        {
+          "info": {
+            "name": "Add a row to a tabular field",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/:id/tables/:table",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "table",
+                "value": "",
+                "type": "path",
+                "description": "Table name (e.g. jobInfo"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Add a row to a tabular field"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Files",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List files for an employee",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/:id/files/view",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "List files for an employee"
+        },
+        {
+          "info": {
+            "name": "Get an employee file",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/:employeeId/files/:fileId",
+            "params": [
+              {
+                "name": "employeeId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "fileId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Get an employee file"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Reports",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Run a saved report",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/reports/:reportId",
+            "params": [
+              {
+                "name": "reportId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "format",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "fd",
+                "value": "",
+                "type": "query",
+                "description": "Filter duplicates"
+              }
+            ],
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Run a saved report"
+        },
+        {
+          "info": {
+            "name": "Run a custom report",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/reports/custom",
+            "params": [
+              {
+                "name": "format",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Run a custom report"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Time Off",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List time off requests",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/time_off/requests",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "action",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "employeeId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "type",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "status",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "List time off requests"
+        },
+        {
+          "info": {
+            "name": "Add a time off request for an employee",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/:id/time_off/request",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Add a time off request for an employee"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Meta",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get a list of all fields",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/meta/fields",
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Get a list of all fields"
+        },
+        {
+          "info": {
+            "name": "Get a list of tabular fields",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/meta/tables",
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Get a list of tabular fields"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
