@@ -82,17 +82,17 @@ common:
   url: https://www.bamboohr.com/
 - type: Documentation
   url: https://documentation.bamboohr.com/docs
-- type: Developer Portal
+- type: DeveloperPortal
   url: https://developers.bamboohr.com/
 - type: APIReference
   url: https://documentation.bamboohr.com/reference
-- type: SignUp
+- type: Signup
   url: https://www.bamboohr.com/signup/
 - type: Pricing
   url: https://www.bamboohr.com/pricing/
 - type: Support
   url: https://help.bamboohr.com/
-- type: LLMsTxt
+- type: LlmsText
   url: https://developers.bamboohr.com/llms.txt
 maintainers:
 - FN: Kin Lane
