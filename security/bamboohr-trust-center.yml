@@ -1,0 +1,14 @@
+generated: '2026-07-11'
+method: searched
+probe: true
+source: https://trust.bamboohr.com/
+url: https://trust.bamboohr.com/
+certifications:
+- SOC 2
+- PCI DSS
+evidence:
+- source: https://trust.bamboohr.com/
+  keywords:
+  - soc 2
+  - pci dss
+  - trust center

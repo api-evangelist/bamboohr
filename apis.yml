@@ -74,6 +74,14 @@ apis:
   - type: Documentation
     url: https://documentation.bamboohr.com/docs/permissioned-webhooks
 common:
+- type: TrustCenter
+  url: security/bamboohr-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/bamboohr-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/bamboohr-domain-security.yml
+- type: Authentication
+  url: authentication/bamboohr-authentication.yml
 - type: OAuthScopes
   url: scopes/bamboohr-scopes.yml
 - type: GitHubOrganization

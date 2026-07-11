@@ -1,0 +1,27 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/bamboohr-openapi.yml
+summary:
+  types:
+  - http
+  - oauth2
+  oauth2_flows:
+  - authorizationCode
+schemes:
+- name: basicAuth
+  type: http
+  scheme: basic
+  description: HTTP Basic auth. Use the API key as the username and any non-empty string as
+    the password.
+  sources:
+  - openapi/bamboohr-openapi.yml
+- name: oauth2
+  type: oauth2
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://api.bamboohr.com/oauth/authorize.php
+    tokenUrl: https://api.bamboohr.com/token.php
+    scopes: 1
+  description: OAuth 2.0 authorization code flow (for multi-customer apps).
+  sources:
+  - openapi/bamboohr-openapi.yml
