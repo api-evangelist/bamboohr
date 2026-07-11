@@ -74,6 +74,8 @@ apis:
   - type: Documentation
     url: https://documentation.bamboohr.com/docs/permissioned-webhooks
 common:
+- type: OAuthScopes
+  url: scopes/bamboohr-scopes.yml
 - type: GitHubOrganization
   url: https://github.com/BambooHR
 - type: LinkedIn
