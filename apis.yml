@@ -74,6 +74,8 @@ apis:
   - type: Documentation
     url: https://documentation.bamboohr.com/docs/permissioned-webhooks
 common:
+- type: AgenticAccess
+  url: agentic-access/bamboohr-agentic-access.yml
 - type: TrustCenter
   url: security/bamboohr-trust-center.yml
 - type: VulnerabilityDisclosure
