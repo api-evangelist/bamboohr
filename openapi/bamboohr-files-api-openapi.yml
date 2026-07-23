@@ -1,0 +1,95 @@
+openapi: 3.1.0
+info:
+  title: BambooHR REST Directory Files API
+  version: v1
+  description: 'RESTful HTTPS API for the BambooHR HRIS. Access employee data, the employee
+
+    directory, time-off, reports, and files. Authentication is per-customer API
+
+    key (HTTP Basic; username = API key, password = any non-empty string) or
+
+    OAuth 2.0 (bearer token).
+
+
+    The base URL is per-customer: `https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1`.
+
+    '
+  contact:
+    name: BambooHR API
+    url: https://documentation.bamboohr.com/docs
+servers:
+- url: https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1
+  description: BambooHR customer endpoint
+  variables:
+    companyDomain:
+      default: mycompany
+      description: Your BambooHR subdomain
+tags:
+- name: Files
+  description: Employee files
+paths:
+  /employees/{id}/files/view:
+    parameters:
+    - in: path
+      name: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: List files for an employee
+      operationId: listEmployeeFiles
+      tags:
+      - Files
+      responses:
+        '200':
+          description: Files
+          content:
+            application/json:
+              schema:
+                type: object
+      security:
+      - basicAuth: []
+      - oauth2: []
+  /employees/{employeeId}/files/{fileId}:
+    parameters:
+    - in: path
+      name: employeeId
+      required: true
+      schema:
+        type: string
+    - in: path
+      name: fileId
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Get an employee file
+      operationId: getEmployeeFile
+      tags:
+      - Files
+      responses:
+        '200':
+          description: File bytes
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+      security:
+      - basicAuth: []
+      - oauth2: []
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: HTTP Basic auth. Use the API key as the username and any non-empty string as the password.
+    oauth2:
+      type: oauth2
+      description: OAuth 2.0 authorization code flow (for multi-customer apps).
+      flows:
+        authorizationCode:
+          authorizationUrl: https://api.bamboohr.com/oauth/authorize.php
+          tokenUrl: https://api.bamboohr.com/token.php
+          scopes:
+            offline_access: Issue a refresh token along with the access token

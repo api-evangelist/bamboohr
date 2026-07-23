@@ -1,0 +1,150 @@
+openapi: 3.1.0
+info:
+  title: BambooHR REST Directory Time Off API
+  version: v1
+  description: 'RESTful HTTPS API for the BambooHR HRIS. Access employee data, the employee
+
+    directory, time-off, reports, and files. Authentication is per-customer API
+
+    key (HTTP Basic; username = API key, password = any non-empty string) or
+
+    OAuth 2.0 (bearer token).
+
+
+    The base URL is per-customer: `https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1`.
+
+    '
+  contact:
+    name: BambooHR API
+    url: https://documentation.bamboohr.com/docs
+servers:
+- url: https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1
+  description: BambooHR customer endpoint
+  variables:
+    companyDomain:
+      default: mycompany
+      description: Your BambooHR subdomain
+tags:
+- name: Time Off
+  description: Time-off requests and balances
+paths:
+  /time_off/requests:
+    get:
+      summary: List time off requests
+      operationId: listTimeOffRequests
+      tags:
+      - Time Off
+      parameters:
+      - in: query
+        name: id
+        schema:
+          type: string
+      - in: query
+        name: action
+        schema:
+          type: string
+          enum:
+          - view
+          - approve
+      - in: query
+        name: employeeId
+        schema:
+          type: string
+      - in: query
+        name: start
+        schema:
+          type: string
+          format: date
+      - in: query
+        name: end
+        schema:
+          type: string
+          format: date
+      - in: query
+        name: type
+        schema:
+          type: string
+      - in: query
+        name: status
+        schema:
+          type: string
+          enum:
+          - approved
+          - denied
+          - superceded
+          - requested
+          - canceled
+      responses:
+        '200':
+          description: Time off requests
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+      security:
+      - basicAuth: []
+      - oauth2: []
+  /employees/{id}/time_off/request:
+    parameters:
+    - in: path
+      name: id
+      required: true
+      schema:
+        type: string
+    put:
+      summary: Add a time off request for an employee
+      operationId: addTimeOffRequest
+      tags:
+      - Time Off
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+              - status
+              - start
+              - end
+              - timeOffTypeId
+              properties:
+                status:
+                  type: string
+                  enum:
+                  - approved
+                  - requested
+                start:
+                  type: string
+                  format: date
+                end:
+                  type: string
+                  format: date
+                timeOffTypeId:
+                  type: integer
+                amount:
+                  type: number
+                notes:
+                  type: object
+      responses:
+        '201':
+          description: Created
+      security:
+      - basicAuth: []
+      - oauth2: []
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: HTTP Basic auth. Use the API key as the username and any non-empty string as the password.
+    oauth2:
+      type: oauth2
+      description: OAuth 2.0 authorization code flow (for multi-customer apps).
+      flows:
+        authorizationCode:
+          authorizationUrl: https://api.bamboohr.com/oauth/authorize.php
+          tokenUrl: https://api.bamboohr.com/token.php
+          scopes:
+            offline_access: Issue a refresh token along with the access token

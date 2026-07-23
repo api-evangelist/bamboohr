@@ -1,0 +1,97 @@
+openapi: 3.1.0
+info:
+  title: BambooHR REST Directory API
+  version: v1
+  description: 'RESTful HTTPS API for the BambooHR HRIS. Access employee data, the employee
+
+    directory, time-off, reports, and files. Authentication is per-customer API
+
+    key (HTTP Basic; username = API key, password = any non-empty string) or
+
+    OAuth 2.0 (bearer token).
+
+
+    The base URL is per-customer: `https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1`.
+
+    '
+  contact:
+    name: BambooHR API
+    url: https://documentation.bamboohr.com/docs
+servers:
+- url: https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1
+  description: BambooHR customer endpoint
+  variables:
+    companyDomain:
+      default: mycompany
+      description: Your BambooHR subdomain
+tags:
+- name: Directory
+  description: Employee directory
+paths:
+  /employees/directory:
+    get:
+      summary: Get the employee directory
+      operationId: getEmployeeDirectory
+      tags:
+      - Directory
+      responses:
+        '200':
+          description: Directory listing
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  fields:
+                    type: array
+                    items:
+                      type: object
+                  employees:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Employee'
+      security:
+      - basicAuth: []
+      - oauth2: []
+components:
+  schemas:
+    Employee:
+      type: object
+      properties:
+        id:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        displayName:
+          type: string
+        jobTitle:
+          type: string
+        workEmail:
+          type: string
+        department:
+          type: string
+        location:
+          type: string
+        supervisor:
+          type: string
+        hireDate:
+          type: string
+          format: date
+        employmentHistoryStatus:
+          type: string
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: HTTP Basic auth. Use the API key as the username and any non-empty string as the password.
+    oauth2:
+      type: oauth2
+      description: OAuth 2.0 authorization code flow (for multi-customer apps).
+      flows:
+        authorizationCode:
+          authorizationUrl: https://api.bamboohr.com/oauth/authorize.php
+          tokenUrl: https://api.bamboohr.com/token.php
+          scopes:
+            offline_access: Issue a refresh token along with the access token

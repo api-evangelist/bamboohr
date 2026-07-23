@@ -1,0 +1,136 @@
+openapi: 3.1.0
+info:
+  title: BambooHR REST Directory Reports API
+  version: v1
+  description: 'RESTful HTTPS API for the BambooHR HRIS. Access employee data, the employee
+
+    directory, time-off, reports, and files. Authentication is per-customer API
+
+    key (HTTP Basic; username = API key, password = any non-empty string) or
+
+    OAuth 2.0 (bearer token).
+
+
+    The base URL is per-customer: `https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1`.
+
+    '
+  contact:
+    name: BambooHR API
+    url: https://documentation.bamboohr.com/docs
+servers:
+- url: https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1
+  description: BambooHR customer endpoint
+  variables:
+    companyDomain:
+      default: mycompany
+      description: Your BambooHR subdomain
+tags:
+- name: Reports
+  description: Custom and standard reports
+paths:
+  /reports/{reportId}:
+    parameters:
+    - in: path
+      name: reportId
+      required: true
+      schema:
+        type: string
+    - in: query
+      name: format
+      schema:
+        type: string
+        enum:
+        - JSON
+        - CSV
+        - PDF
+        - XLS
+        - XML
+    - in: query
+      name: fd
+      schema:
+        type: string
+        enum:
+        - 'yes'
+        - 'no'
+      description: Filter duplicates
+    get:
+      summary: Run a saved report
+      operationId: runReport
+      tags:
+      - Reports
+      responses:
+        '200':
+          description: Report data
+          content:
+            application/json:
+              schema:
+                type: object
+            text/csv:
+              schema:
+                type: string
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+      security:
+      - basicAuth: []
+      - oauth2: []
+  /reports/custom:
+    post:
+      summary: Run a custom report
+      operationId: runCustomReport
+      tags:
+      - Reports
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - JSON
+          - CSV
+          - PDF
+          - XLS
+          - XML
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+              - fields
+              properties:
+                title:
+                  type: string
+                fields:
+                  type: array
+                  items:
+                    type: string
+                filters:
+                  type: object
+      responses:
+        '200':
+          description: Report results
+          content:
+            application/json:
+              schema:
+                type: object
+      security:
+      - basicAuth: []
+      - oauth2: []
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: HTTP Basic auth. Use the API key as the username and any non-empty string as the password.
+    oauth2:
+      type: oauth2
+      description: OAuth 2.0 authorization code flow (for multi-customer apps).
+      flows:
+        authorizationCode:
+          authorizationUrl: https://api.bamboohr.com/oauth/authorize.php
+          tokenUrl: https://api.bamboohr.com/token.php
+          scopes:
+            offline_access: Issue a refresh token along with the access token

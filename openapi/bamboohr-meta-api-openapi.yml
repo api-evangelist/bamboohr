@@ -1,0 +1,81 @@
+openapi: 3.1.0
+info:
+  title: BambooHR REST Directory Meta API
+  version: v1
+  description: 'RESTful HTTPS API for the BambooHR HRIS. Access employee data, the employee
+
+    directory, time-off, reports, and files. Authentication is per-customer API
+
+    key (HTTP Basic; username = API key, password = any non-empty string) or
+
+    OAuth 2.0 (bearer token).
+
+
+    The base URL is per-customer: `https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1`.
+
+    '
+  contact:
+    name: BambooHR API
+    url: https://documentation.bamboohr.com/docs
+servers:
+- url: https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1
+  description: BambooHR customer endpoint
+  variables:
+    companyDomain:
+      default: mycompany
+      description: Your BambooHR subdomain
+tags:
+- name: Meta
+  description: Field metadata
+paths:
+  /meta/fields:
+    get:
+      summary: Get a list of all fields
+      operationId: listFields
+      tags:
+      - Meta
+      responses:
+        '200':
+          description: Field metadata
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+      security:
+      - basicAuth: []
+      - oauth2: []
+  /meta/tables:
+    get:
+      summary: Get a list of tabular fields
+      operationId: listTables
+      tags:
+      - Meta
+      responses:
+        '200':
+          description: Tabular field metadata
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+      security:
+      - basicAuth: []
+      - oauth2: []
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: HTTP Basic auth. Use the API key as the username and any non-empty string as the password.
+    oauth2:
+      type: oauth2
+      description: OAuth 2.0 authorization code flow (for multi-customer apps).
+      flows:
+        authorizationCode:
+          authorizationUrl: https://api.bamboohr.com/oauth/authorize.php
+          tokenUrl: https://api.bamboohr.com/token.php
+          scopes:
+            offline_access: Issue a refresh token along with the access token

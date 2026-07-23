@@ -1,0 +1,195 @@
+openapi: 3.1.0
+info:
+  title: BambooHR REST Directory Employees API
+  version: v1
+  description: 'RESTful HTTPS API for the BambooHR HRIS. Access employee data, the employee
+
+    directory, time-off, reports, and files. Authentication is per-customer API
+
+    key (HTTP Basic; username = API key, password = any non-empty string) or
+
+    OAuth 2.0 (bearer token).
+
+
+    The base URL is per-customer: `https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1`.
+
+    '
+  contact:
+    name: BambooHR API
+    url: https://documentation.bamboohr.com/docs
+servers:
+- url: https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1
+  description: BambooHR customer endpoint
+  variables:
+    companyDomain:
+      default: mycompany
+      description: Your BambooHR subdomain
+tags:
+- name: Employees
+  description: Employee records
+paths:
+  /employees/{id}:
+    parameters:
+    - in: path
+      name: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Get an employee
+      operationId: getEmployee
+      tags:
+      - Employees
+      parameters:
+      - in: query
+        name: fields
+        required: true
+        schema:
+          type: string
+        description: Comma-separated list of fields to return
+      responses:
+        '200':
+          description: Employee
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Employee'
+      security:
+      - basicAuth: []
+      - oauth2: []
+    post:
+      summary: Update an employee
+      operationId: updateEmployee
+      tags:
+      - Employees
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Updated
+      security:
+      - basicAuth: []
+      - oauth2: []
+  /employees:
+    post:
+      summary: Add an employee
+      operationId: addEmployee
+      tags:
+      - Employees
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+              - firstName
+              - lastName
+              properties:
+                firstName:
+                  type: string
+                lastName:
+                  type: string
+                workEmail:
+                  type: string
+      responses:
+        '201':
+          description: Created. The Location header contains the new employee URL.
+      security:
+      - basicAuth: []
+      - oauth2: []
+  /employees/{id}/tables/{table}:
+    parameters:
+    - in: path
+      name: id
+      required: true
+      schema:
+        type: string
+    - in: path
+      name: table
+      required: true
+      schema:
+        type: string
+      description: Table name (e.g. jobInfo
+      compensation: null
+      employmentStatus): null
+    get:
+      summary: Get rows from a tabular field for an employee
+      operationId: getEmployeeTable
+      tags:
+      - Employees
+      responses:
+        '200':
+          description: Table rows
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+      security:
+      - basicAuth: []
+      - oauth2: []
+    post:
+      summary: Add a row to a tabular field
+      operationId: addEmployeeTableRow
+      tags:
+      - Employees
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Row added
+      security:
+      - basicAuth: []
+      - oauth2: []
+components:
+  schemas:
+    Employee:
+      type: object
+      properties:
+        id:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        displayName:
+          type: string
+        jobTitle:
+          type: string
+        workEmail:
+          type: string
+        department:
+          type: string
+        location:
+          type: string
+        supervisor:
+          type: string
+        hireDate:
+          type: string
+          format: date
+        employmentHistoryStatus:
+          type: string
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: HTTP Basic auth. Use the API key as the username and any non-empty string as the password.
+    oauth2:
+      type: oauth2
+      description: OAuth 2.0 authorization code flow (for multi-customer apps).
+      flows:
+        authorizationCode:
+          authorizationUrl: https://api.bamboohr.com/oauth/authorize.php
+          tokenUrl: https://api.bamboohr.com/token.php
+          scopes:
+            offline_access: Issue a refresh token along with the access token
