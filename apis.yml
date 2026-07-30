@@ -7,7 +7,19 @@ description: BambooHR is a cloud-based human resources software platform for sma
   time-off, and integrate with the HRIS using either OAuth 2.0 or per-customer API
   keys over HTTPS Basic Auth.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bamboohr.png
 tags:
 - HR
 - HRIS
@@ -23,9 +35,10 @@ specificationVersion: '0.19'
 apis:
 - aid: bamboohr:rest-api
   name: BambooHR REST API
-  description: RESTful HTTPS API for accessing and manipulating employee data, directories,
-    time-off, reports, and other BambooHR HRIS resources. Supports OAuth 2.0 for multi-customer
-    apps and API key (HTTP Basic) for single-customer integrations.
+  description: >-
+    RESTful HTTPS API for accessing and manipulating employee data, directories, time-off, reports, and
+    other BambooHR HRIS resources. Supports OAuth 2.0 for multi-customer apps and API key (HTTP Basic)
+    for single-customer integrations.
   humanURL: https://documentation.bamboohr.com/docs
   baseURL: https://api.bamboohr.com/api/gateway.php
   tags:
@@ -49,11 +62,11 @@ apis:
     type: GraphQL
 - aid: bamboohr:webhooks
   name: BambooHR Webhooks
-  description: Event-driven webhook surface for BambooHR. Webhooks fire when monitored
-    fields change on Employee records (and when employee records are created or deleted).
-    Subscribers register an HTTPS URL per monitored field; BambooHR POSTs an event-based
-    or field-based JSON payload carrying the employee identifier and the list of changed
-    fields, signed with an SHA-256 HMAC.
+  description: >-
+    Event-driven webhook surface for BambooHR. Webhooks fire when monitored fields change on Employee
+    records (and when employee records are created or deleted). Subscribers register an HTTPS URL per
+    monitored field; BambooHR POSTs an event-based or field-based JSON payload carrying the employee identifier
+    and the list of changed fields, signed with an SHA-256 HMAC.
   humanURL: https://documentation.bamboohr.com/docs/webhooks
   tags:
   - Webhooks
@@ -64,7 +77,8 @@ apis:
   - type: Documentation
     url: https://documentation.bamboohr.com/docs/webhooks
   - type: AsyncAPI
-    url: https://raw.githubusercontent.com/api-evangelist/bamboohr/refs/heads/main/openapi/bamboohr-asyncapi.yml
+    url: >-
+      https://raw.githubusercontent.com/api-evangelist/bamboohr/refs/heads/main/openapi/bamboohr-asyncapi.yml
   - type: Documentation
     url: https://documentation.bamboohr.com/docs/event-based-webhooks
   - type: Documentation
@@ -73,6 +87,66 @@ apis:
     url: https://documentation.bamboohr.com/docs/global-webhooks
   - type: Documentation
     url: https://documentation.bamboohr.com/docs/permissioned-webhooks
+- aid: bamboohr:bamboohr-directory-api
+  name: BambooHR Directory API
+  description: Employee directory
+  humanURL: https://documentation.bamboohr.com/docs
+  baseURL: https://api.bamboohr.com/api/gateway.php
+  tags:
+  - Directory
+  properties:
+  - type: OpenAPI
+    url: openapi/bamboohr-directory-api-openapi.yml
+- aid: bamboohr:bamboohr-employees-api
+  name: BambooHR Employees API
+  description: Employee records
+  humanURL: https://documentation.bamboohr.com/docs
+  baseURL: https://api.bamboohr.com/api/gateway.php
+  tags:
+  - Employees
+  properties:
+  - type: OpenAPI
+    url: openapi/bamboohr-employees-api-openapi.yml
+- aid: bamboohr:bamboohr-files-api
+  name: BambooHR Files API
+  description: Employee files
+  humanURL: https://documentation.bamboohr.com/docs
+  baseURL: https://api.bamboohr.com/api/gateway.php
+  tags:
+  - Files
+  properties:
+  - type: OpenAPI
+    url: openapi/bamboohr-files-api-openapi.yml
+- aid: bamboohr:bamboohr-meta-api
+  name: BambooHR Meta API
+  description: Field metadata
+  humanURL: https://documentation.bamboohr.com/docs
+  baseURL: https://api.bamboohr.com/api/gateway.php
+  tags:
+  - Meta
+  properties:
+  - type: OpenAPI
+    url: openapi/bamboohr-meta-api-openapi.yml
+- aid: bamboohr:bamboohr-reports-api
+  name: BambooHR Reports API
+  description: Custom and standard reports
+  humanURL: https://documentation.bamboohr.com/docs
+  baseURL: https://api.bamboohr.com/api/gateway.php
+  tags:
+  - Reports
+  properties:
+  - type: OpenAPI
+    url: openapi/bamboohr-reports-api-openapi.yml
+- aid: bamboohr:bamboohr-time-off-api
+  name: BambooHR Time Off API
+  description: Time-off requests and balances
+  humanURL: https://documentation.bamboohr.com/docs
+  baseURL: https://api.bamboohr.com/api/gateway.php
+  tags:
+  - Time Off
+  properties:
+  - type: OpenAPI
+    url: openapi/bamboohr-time-off-api-openapi.yml
 common:
 - type: AgenticAccess
   url: agentic-access/bamboohr-agentic-access.yml
