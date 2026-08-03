@@ -1,0 +1,24 @@
+{
+  "provider": "bamboohr",
+  "sources": [
+    "bamboohr-directory-api-openapi.yml",
+    "bamboohr-employees-api-openapi.yml",
+    "bamboohr-files-api-openapi.yml",
+    "bamboohr-meta-api-openapi.yml",
+    "bamboohr-reports-api-openapi.yml",
+    "bamboohr-time-off-api-openapi.yml"
+  ],
+  "outputs": [
+    "bamboohr-directory-api-openapi.yml",
+    "bamboohr-employees-api-openapi.yml",
+    "bamboohr-files-api-openapi.yml",
+    "bamboohr-meta-api-openapi.yml",
+    "bamboohr-reports-api-openapi.yml",
+    "bamboohr-time-off-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
