@@ -1,0 +1,697 @@
+{
+  "item": [
+    {
+      "id": "46ba7513-909f-464d-8218-7e72b510bbf3",
+      "name": "Employees",
+      "description": {
+        "content": "Employee records",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "6d1de195-de1d-4a5b-a1d2-84193afa0c6e",
+          "name": "Get an employee",
+          "request": {
+            "name": "Get an employee",
+            "description": {},
+            "url": {
+              "path": [
+                "employees",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "fields",
+                  "value": "<string>",
+                  "description": "(Required) Comma-separated list of fields to return"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                },
+                {
+                  "description": "Your BambooHR subdomain",
+                  "type": "any",
+                  "value": "{{companyDomain}}",
+                  "key": "companyDomain"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{basicAuthUsername}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{basicAuthPassword}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "3904861a-a1e2-4957-b3dd-43f558abbe35",
+              "name": "Employee",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "fields",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "description": "Your BambooHR subdomain",
+                      "type": "any",
+                      "value": "{{companyDomain}}",
+                      "key": "companyDomain"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"displayName\": \"string\",\n  \"jobTitle\": \"string\",\n  \"workEmail\": \"string\",\n  \"department\": \"string\",\n  \"location\": \"string\",\n  \"supervisor\": \"string\",\n  \"hireDate\": \"2017-12-15\",\n  \"employmentHistoryStatus\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f8306114-2527-4023-a5e3-9ebe5ed44f8d",
+          "name": "Update an employee",
+          "request": {
+            "name": "Update an employee",
+            "description": {},
+            "url": {
+              "path": [
+                "employees",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                },
+                {
+                  "description": "Your BambooHR subdomain",
+                  "type": "any",
+                  "value": "{{companyDomain}}",
+                  "key": "companyDomain"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{basicAuthUsername}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{basicAuthPassword}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "<object>",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "c6f4104f-b34c-4c2a-9df1-7e182b1c0dd2",
+              "name": "Updated",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "description": "Your BambooHR subdomain",
+                      "type": "any",
+                      "value": "{{companyDomain}}",
+                      "key": "companyDomain"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "<object>",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b6f84710-4e9e-4d11-9afb-f7b2ace61a82",
+          "name": "Add an employee",
+          "request": {
+            "name": "Add an employee",
+            "description": {},
+            "url": {
+              "path": [
+                "employees"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Your BambooHR subdomain",
+                  "type": "any",
+                  "value": "{{companyDomain}}",
+                  "key": "companyDomain"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{basicAuthUsername}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{basicAuthPassword}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"workEmail\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "6cb2f47d-5649-481d-8a32-b877dfd98310",
+              "name": "Created. The Location header contains the new employee URL.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Your BambooHR subdomain",
+                      "type": "any",
+                      "value": "{{companyDomain}}",
+                      "key": "companyDomain"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"workEmail\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3e588c7b-2a00-4075-a98c-e3df2c21636e",
+          "name": "Get rows from a tabular field for an employee",
+          "request": {
+            "name": "Get rows from a tabular field for an employee",
+            "description": {},
+            "url": {
+              "path": [
+                "employees",
+                ":id",
+                "tables",
+                ":table"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "table",
+                  "description": "(Required) Table name (e.g. jobInfo"
+                },
+                {
+                  "description": "Your BambooHR subdomain",
+                  "type": "any",
+                  "value": "{{companyDomain}}",
+                  "key": "companyDomain"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{basicAuthUsername}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{basicAuthPassword}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "6cd88467-ba10-40e1-b771-a9f529a4d99e",
+              "name": "Table rows",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees",
+                    ":id",
+                    "tables",
+                    ":table"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "table",
+                      "description": "(Required) Table name (e.g. jobInfo"
+                    },
+                    {
+                      "description": "Your BambooHR subdomain",
+                      "type": "any",
+                      "value": "{{companyDomain}}",
+                      "key": "companyDomain"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "1cf5e3b3-ace5-41e9-9a76-d43eace8dd04",
+          "name": "Add a row to a tabular field",
+          "request": {
+            "name": "Add a row to a tabular field",
+            "description": {},
+            "url": {
+              "path": [
+                "employees",
+                ":id",
+                "tables",
+                ":table"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "table",
+                  "description": "(Required) Table name (e.g. jobInfo"
+                },
+                {
+                  "description": "Your BambooHR subdomain",
+                  "type": "any",
+                  "value": "{{companyDomain}}",
+                  "key": "companyDomain"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{basicAuthUsername}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{basicAuthPassword}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "<object>",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "6caa5a0e-e43a-4a78-b8b3-1672e321dbc9",
+              "name": "Row added",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees",
+                    ":id",
+                    "tables",
+                    ":table"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "table",
+                      "description": "(Required) Table name (e.g. jobInfo"
+                    },
+                    {
+                      "description": "Your BambooHR subdomain",
+                      "type": "any",
+                      "value": "{{companyDomain}}",
+                      "key": "companyDomain"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "<object>",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Your BambooHR subdomain",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "mycompany",
+      "key": "companyDomain"
+    },
+    {
+      "type": "string",
+      "value": "https://api.bamboohr.com/api/gateway.php/{{companyDomain}}/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "3b57d1a3-dee8-4565-9227-26560327da80",
+    "name": "BambooHR REST Directory Employees API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "RESTful HTTPS API for the BambooHR HRIS. Access employee data, the employee\ndirectory, time-off, reports, and files. Authentication is per-customer API\nkey (HTTP Basic; username = API key, password = any non-empty string) or\nOAuth 2.0 (bearer token).\n\nThe base URL is per-customer: `https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1`.\n\n\nContact Support:\n Name: BambooHR API",
+      "type": "text/plain"
+    }
+  }
+}

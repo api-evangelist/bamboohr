@@ -1,0 +1,343 @@
+{
+  "item": [
+    {
+      "id": "76e24785-9181-49d2-955b-ba63be3b1f23",
+      "name": "Time Off",
+      "description": {
+        "content": "Time-off requests and balances",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "7a5c5363-73f7-4558-a915-b4d6a0ccfc20",
+          "name": "List time off requests",
+          "request": {
+            "name": "List time off requests",
+            "description": {},
+            "url": {
+              "path": [
+                "time_off",
+                "requests"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "action",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "employeeId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "start",
+                  "value": "<date>"
+                },
+                {
+                  "disabled": false,
+                  "key": "end",
+                  "value": "<date>"
+                },
+                {
+                  "disabled": false,
+                  "key": "type",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "status",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "description": "Your BambooHR subdomain",
+                  "type": "any",
+                  "value": "{{companyDomain}}",
+                  "key": "companyDomain"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{basicAuthUsername}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{basicAuthPassword}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "112e1fc3-5fba-41f0-acc8-607bbed677d4",
+              "name": "Time off requests",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "time_off",
+                    "requests"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "id",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "action",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "employeeId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "start",
+                      "value": "<date>"
+                    },
+                    {
+                      "key": "end",
+                      "value": "<date>"
+                    },
+                    {
+                      "key": "type",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "status",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "description": "Your BambooHR subdomain",
+                      "type": "any",
+                      "value": "{{companyDomain}}",
+                      "key": "companyDomain"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "282b16f8-6a7a-47c0-8582-6be361433e3d",
+          "name": "Add a time off request for an employee",
+          "request": {
+            "name": "Add a time off request for an employee",
+            "description": {},
+            "url": {
+              "path": [
+                "employees",
+                ":id",
+                "time_off",
+                "request"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                },
+                {
+                  "description": "Your BambooHR subdomain",
+                  "type": "any",
+                  "value": "{{companyDomain}}",
+                  "key": "companyDomain"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{basicAuthUsername}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{basicAuthPassword}}"
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"<string>\",\n  \"start\": \"<date>\",\n  \"end\": \"<date>\",\n  \"timeOffTypeId\": \"<integer>\",\n  \"amount\": \"<number>\",\n  \"notes\": \"<object>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "45143b76-3446-43fa-832c-a91ae37c38b8",
+              "name": "Created",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees",
+                    ":id",
+                    "time_off",
+                    "request"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "description": "Your BambooHR subdomain",
+                      "type": "any",
+                      "value": "{{companyDomain}}",
+                      "key": "companyDomain"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"status\": \"<string>\",\n  \"start\": \"<date>\",\n  \"end\": \"<date>\",\n  \"timeOffTypeId\": \"<integer>\",\n  \"amount\": \"<number>\",\n  \"notes\": \"<object>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Your BambooHR subdomain",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "mycompany",
+      "key": "companyDomain"
+    },
+    {
+      "type": "string",
+      "value": "https://api.bamboohr.com/api/gateway.php/{{companyDomain}}/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "b4b7a6d6-80f9-46a9-8403-60851a634b7b",
+    "name": "BambooHR REST Directory Time Off API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "RESTful HTTPS API for the BambooHR HRIS. Access employee data, the employee\ndirectory, time-off, reports, and files. Authentication is per-customer API\nkey (HTTP Basic; username = API key, password = any non-empty string) or\nOAuth 2.0 (bearer token).\n\nThe base URL is per-customer: `https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1`.\n\n\nContact Support:\n Name: BambooHR API",
+      "type": "text/plain"
+    }
+  }
+}

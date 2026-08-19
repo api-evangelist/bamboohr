@@ -1,0 +1,297 @@
+{
+  "item": [
+    {
+      "id": "bedefa9c-fcc8-43ee-88a7-c29949735ca4",
+      "name": "Files",
+      "description": {
+        "content": "Employee files",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "84513c42-f581-4a79-bc1c-e4cf20c61c24",
+          "name": "List files for an employee",
+          "request": {
+            "name": "List files for an employee",
+            "description": {},
+            "url": {
+              "path": [
+                "employees",
+                ":id",
+                "files",
+                "view"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                },
+                {
+                  "description": "Your BambooHR subdomain",
+                  "type": "any",
+                  "value": "{{companyDomain}}",
+                  "key": "companyDomain"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{basicAuthUsername}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{basicAuthPassword}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "3c644290-66bc-47a5-bcc5-fa647c4f9d31",
+              "name": "Files",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees",
+                    ":id",
+                    "files",
+                    "view"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "description": "Your BambooHR subdomain",
+                      "type": "any",
+                      "value": "{{companyDomain}}",
+                      "key": "companyDomain"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "1837bb84-0569-4e90-b156-5f2b05c30420",
+          "name": "Get an employee file",
+          "request": {
+            "name": "Get an employee file",
+            "description": {},
+            "url": {
+              "path": [
+                "employees",
+                ":employeeId",
+                "files",
+                ":fileId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "employeeId",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "fileId",
+                  "description": "(Required) "
+                },
+                {
+                  "description": "Your BambooHR subdomain",
+                  "type": "any",
+                  "value": "{{companyDomain}}",
+                  "key": "companyDomain"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/octet-stream"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{basicAuthUsername}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{basicAuthPassword}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "932324e6-9afa-44d1-ad3e-33dcea9e8f19",
+              "name": "File bytes",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "employees",
+                    ":employeeId",
+                    "files",
+                    ":fileId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "employeeId",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "fileId",
+                      "description": "(Required) "
+                    },
+                    {
+                      "description": "Your BambooHR subdomain",
+                      "type": "any",
+                      "value": "{{companyDomain}}",
+                      "key": "companyDomain"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/octet-stream"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/octet-stream"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Your BambooHR subdomain",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "mycompany",
+      "key": "companyDomain"
+    },
+    {
+      "type": "string",
+      "value": "https://api.bamboohr.com/api/gateway.php/{{companyDomain}}/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "52e3fde8-afa7-44b1-b240-409f11e31c29",
+    "name": "BambooHR REST Directory Files API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "RESTful HTTPS API for the BambooHR HRIS. Access employee data, the employee\ndirectory, time-off, reports, and files. Authentication is per-customer API\nkey (HTTP Basic; username = API key, password = any non-empty string) or\nOAuth 2.0 (bearer token).\n\nThe base URL is per-customer: `https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1`.\n\n\nContact Support:\n Name: BambooHR API",
+      "type": "text/plain"
+    }
+  }
+}

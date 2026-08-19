@@ -1,0 +1,98 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "BambooHR REST Directory Time Off API",
+    "version": "v1"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Time Off",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List time off requests",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/time_off/requests",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "action",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "employeeId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "type",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "status",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "List time off requests"
+        },
+        {
+          "info": {
+            "name": "Add a time off request for an employee",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/:id/time_off/request",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Add a time off request for an employee"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,34 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "BambooHR REST Directory API",
+    "version": "v1"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Directory",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get the employee directory",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/directory",
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Get the employee directory"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

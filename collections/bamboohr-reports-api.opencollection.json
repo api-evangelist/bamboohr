@@ -1,0 +1,79 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "BambooHR REST Directory Reports API",
+    "version": "v1"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Reports",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Run a saved report",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/reports/:reportId",
+            "params": [
+              {
+                "name": "reportId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "format",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "fd",
+                "value": "",
+                "type": "query",
+                "description": "Filter duplicates"
+              }
+            ],
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Run a saved report"
+        },
+        {
+          "info": {
+            "name": "Run a custom report",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/reports/custom",
+            "params": [
+              {
+                "name": "format",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Run a custom report"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

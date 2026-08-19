@@ -1,0 +1,50 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "BambooHR REST Directory Meta API",
+    "version": "v1"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Meta",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get a list of all fields",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/meta/fields",
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Get a list of all fields"
+        },
+        {
+          "info": {
+            "name": "Get a list of tabular fields",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/meta/tables",
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Get a list of tabular fields"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

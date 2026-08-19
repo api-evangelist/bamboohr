@@ -1,0 +1,69 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "BambooHR REST Directory Files API",
+    "version": "v1"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Files",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List files for an employee",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/:id/files/view",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "List files for an employee"
+        },
+        {
+          "info": {
+            "name": "Get an employee file",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/:employeeId/files/:fileId",
+            "params": [
+              {
+                "name": "employeeId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "fileId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Get an employee file"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,156 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "BambooHR REST Directory Employees API",
+    "version": "v1"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Employees",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get an employee",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "fields",
+                "value": "",
+                "type": "query",
+                "description": "Comma-separated list of fields to return"
+              }
+            ],
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Get an employee"
+        },
+        {
+          "info": {
+            "name": "Update an employee",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Update an employee"
+        },
+        {
+          "info": {
+            "name": "Add an employee",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Add an employee"
+        },
+        {
+          "info": {
+            "name": "Get rows from a tabular field for an employee",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/:id/tables/:table",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "table",
+                "value": "",
+                "type": "path",
+                "description": "Table name (e.g. jobInfo"
+              }
+            ],
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Get rows from a tabular field for an employee"
+        },
+        {
+          "info": {
+            "name": "Add a row to a tabular field",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1/employees/:id/tables/:table",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "table",
+                "value": "",
+                "type": "path",
+                "description": "Table name (e.g. jobInfo"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Add a row to a tabular field"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
