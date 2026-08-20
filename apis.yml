@@ -69,6 +69,11 @@ apis:
     and the list of changed fields, signed with an SHA-256 HMAC.
   humanURL: https://documentation.bamboohr.com/docs/webhooks
   tags:
+  - Webhook
+  - Event
+  - Employees
+  - HRIS
+  tags_raw:
   - Webhooks
   - Events
   - Employees
@@ -113,6 +118,8 @@ apis:
   humanURL: https://documentation.bamboohr.com/docs
   baseURL: https://api.bamboohr.com/api/gateway.php
   tags:
+  - File
+  tags_raw:
   - Files
   properties:
   - type: OpenAPI
