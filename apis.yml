@@ -33,6 +33,13 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bamboohr.png
 tags:
+- Human Resources
+- HRIS
+- Payroll
+- Time Tracking
+- Applicant Tracking
+- Performance Management
+tags_raw:
 - HR
 - HRIS
 - Human Resources
@@ -54,6 +61,12 @@ apis:
   humanURL: https://documentation.bamboohr.com/docs
   baseURL: https://api.bamboohr.com/api/gateway.php
   tags:
+  - Human Resources
+  - Employees
+  - Time Off
+  - Reports
+  - Directory
+  tags_raw:
   - HR
   - Employees
   - Time Off
