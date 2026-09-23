@@ -1,12 +1,7 @@
 {
   "provider": "bamboohr",
   "sources": [
-    "bamboohr-directory-api-openapi.yml",
-    "bamboohr-employees-api-openapi.yml",
-    "bamboohr-files-api-openapi.yml",
-    "bamboohr-meta-api-openapi.yml",
-    "bamboohr-reports-api-openapi.yml",
-    "bamboohr-time-off-api-openapi.yml"
+    "_original/bamboohr-openapi.yml"
   ],
   "outputs": [
     "bamboohr-directory-api-openapi.yml",
@@ -19,6 +14,17 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "bamboohr-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "bamboohr-directory-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bamboohr-employees-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bamboohr-files-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bamboohr-meta-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bamboohr-reports-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bamboohr-time-off-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

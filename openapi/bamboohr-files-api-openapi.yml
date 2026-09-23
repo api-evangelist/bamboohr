@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: BambooHR REST Directory Files API
+  title: BambooHR REST Files API
   version: v1
   description: 'RESTful HTTPS API for the BambooHR HRIS. Access employee data, the employee
 
@@ -11,9 +11,7 @@ info:
     OAuth 2.0 (bearer token).
 
 
-    The base URL is per-customer: `https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1`.
-
-    '
+    The base URL is per-customer: `https://api.bamboohr.com/api/gateway.php/{companyDomain}/v1`.'
   contact:
     name: BambooHR API
     url: https://documentation.bamboohr.com/docs
