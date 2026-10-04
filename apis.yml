@@ -178,6 +178,9 @@ apis:
   - type: OpenAPI
     url: openapi/bamboohr-time-off-api-openapi.yml
 common:
+- type: CapabilityMap
+  url: capabilities/bamboohr-capability-edges.yml
+  name: BambooHR Business Capability Map
 - type: AgenticAccess
   url: agentic-access/bamboohr-agentic-access.yml
 - type: TrustCenter

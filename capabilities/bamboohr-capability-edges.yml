@@ -1,0 +1,51 @@
+slug: bamboohr
+provider: BambooHR
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 4
+edges:
+- tag: Employees
+  spec_file: bamboohr-employees-api-openapi.yml
+  capability_id: BC-300.70
+  capability_id_l1: BC-300
+  capability_name: HR Operations Management
+  confidence: 0.88
+  evidence: GET /employees/{id} Get an employee; POST /employees addEmployee Add an employee
+  reason: Create, read and update of employee master records in an HRIS — core HR Operations (employee
+    records) under Human Capital Management.
+- tag: Directory
+  spec_file: bamboohr-directory-api-openapi.yml
+  capability_id: BC-300.70
+  capability_id_l1: BC-300
+  capability_name: HR Operations Management
+  confidence: 0.8
+  evidence: GET /employees/directory  getEmployeeDirectory  Get the employee directory
+  reason: Operation returns the HRIS employee directory with an Employee schema — employee record access,
+    i.e. HR operations/employee data administration within Human Capital Management.
+- tag: Time Off
+  spec_file: bamboohr-time-off-api-openapi.yml
+  capability_id: BC-300.70
+  capability_id_l1: BC-300
+  capability_name: HR Operations Management
+  confidence: 0.78
+  evidence: PUT /employees/{id}/time_off/request  addTimeOffRequest  Add a time off request for an employee
+  reason: Absence/leave request capture and listing for employees — administrative HR service delivery
+    within Human Capital Management.
+- tag: Files
+  spec_file: bamboohr-files-api-openapi.yml
+  capability_id: BC-300.70
+  capability_id_l1: BC-300
+  capability_name: HR Operations Management
+  confidence: 0.7
+  evidence: GET /employees/{id}/files/view  listEmployeeFiles  List files for an employee
+  reason: Employee document/file retrieval attached to employee records; this is HR record-keeping rather
+    than a generic document store, since files are keyed by employee in an HRIS.
