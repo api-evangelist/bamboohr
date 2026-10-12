@@ -1,0 +1,3058 @@
+generated: '2026-10-12'
+method: searched
+checked:
+- https://www.bamboohr.com/integrations/
+marketplace_apps:
+- marketplace: own
+  channel: partner-built
+  app: bamboohr
+  url: https://www.bamboohr.com/integrations/
+  app_count: 203
+  adapter: sweep-hr-stores.py:aem-query-index
+  listed: 203
+edges:
+- partner_name: 1-on-1s by Deel Engage
+  app: 1-on-1s by Deel Engage
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/1-on-1s-by-roots
+  category: Engagement & Culture
+  partner_domain: tryroots.io
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: 15Five
+  app: 15Five
+  partner: 15five
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/15five
+  category: Performance
+  partner_domain: 15five.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: 15Five Engagement
+  app: 15Five Engagement
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/15five-engagement
+  category: Engagement & Culture
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Absorb Software Inc.
+  app: Absorb
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/absorb
+  category: Learning & Training
+  partner_domain: absorblms.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: ACA Reporting Service
+  app: ACA Reporting Delivered by Lumelight
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/aca-reporting-service
+  category: Safety & Compliance, Benefits Administration
+  partner_domain: lumelight.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Aclaimant
+  app: Aclaimant
+  partner: aclaimant
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/aclaimant
+  category: Safety & Compliance
+  partner_domain: aclaimant.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: AppsCo Inc.
+  app: AppsCo
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/appsco
+  category: Identity Management
+  partner_domain: appsco.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Assembly
+  app: Assembly Employee Recognition
+  partner: assembly
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/assembly
+  category: Engagement & Culture, Recognition & Rewards
+  partner_domain: joinassembly.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Backgrounds Online
+  app: Backgrounds Online
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/backgrounds-online
+  category: Background Checks
+  partner_domain: backgroundsonline.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: BambooHR® Applicant Tracking
+  app: BambooHR® Applicant Tracking
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/bamboohr-applicant-tracking
+  category: Applicant Tracking Systems
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: BambooHR® Employee Wellbeing
+  app: BambooHR® Employee Wellbeing
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/bamboohr-employee-wellbeing
+  category: Engagement & Culture
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Performance Management
+  app: Performance Management
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/bamboohr-performance-management
+  category: Performance
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: BambooHR® Time Tracking
+  app: BambooHR® Time Tracking
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/bamboohr-time-tracking
+  category: Time Tracking & Scheduling
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Blue Marble Global Payroll
+  app: Blue Marble Global Payroll
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/blue-marble-global-payroll
+  category: Payroll, Global Payroll
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Bonusly
+  app: Bonusly
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/bonusly
+  category: Recognition & Rewards
+  partner_domain: bonus.ly
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Breezy HR
+  app: BreezyHR
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/breezyhr
+  category: Applicant Tracking Systems
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Carta
+  app: Carta
+  partner: carta
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/carta
+  category: Compensation Software
+  partner_domain: carta.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Checkr
+  app: Checkr
+  partner: checkr
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/checkr
+  category: Background Checks
+  partner_domain: checkr.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: ClickTime
+  app: ClickTime
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/clicktime
+  category: Time Tracking & Scheduling
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Comeet
+  app: Comeet
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/comeet
+  category: Applicant Tracking Systems
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Criteria Corp
+  app: Criteria Corp
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/criteriacorp
+  category: Assessments, Video Interviews
+  partner_domain: helpdocs.io
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Culture Amp
+  app: Culture Amp
+  partner: culture-amp
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/culture-amp
+  category: Engagement & Culture
+  partner_domain: cultureamp.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: CyberArk Identity
+  app: CyberArk Identity
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/cyberark-identity
+  category: Identity Management
+  partner_domain: cyberark.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Deel
+  app: Deel
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/deel
+  category: Payroll, PEO, Global Payroll
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Deputy
+  app: Deputy
+  partner: deputy
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/deputy
+  category: Time Tracking & Scheduling
+  partner_domain: deputy.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Ease
+  app: Ease
+  partner: ease
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/ease
+  category: Benefits Administration
+  partner_domain: ease.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Effortless Admin
+  app: Effortless Admin
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/effortless-admin
+  category: Benefits Administration
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Employee Cycle
+  app: Employee Cycle
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/employee-cycle
+  category: Reporting & Analytics
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Enboarder
+  app: Enboarder
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/enboarder
+  category: Onboarding
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Engagedly
+  app: Engagedly
+  partner: engagedly
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/engagedly
+  category: Performance
+  partner_domain: engagedly.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Gifted
+  app: Gifted
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/gifted
+  category: Recognition & Rewards
+  partner_domain: gifted.co
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: GoalSpan
+  app: GoalSpan
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/goalspan
+  category: Performance
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Google Single Sign-On
+  app: Google Single Sign-On
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/google-single-sign-on
+  category: Identity Management
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Greenhouse Onboarding
+  app: Greenhouse Onboarding
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/greenhouse-onboarding
+  category: Onboarding
+  partner_domain: greenhouse.io
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Greenhouse Software
+  app: Greenhouse Software
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/greenhouse-software
+  category: Applicant Tracking Systems
+  partner_domain: greenhouse.io
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: HelloTeam
+  app: HelloTeam
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/helloteam
+  category: Performance
+  partner_domain: helloteam.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: HelloTeam
+  app: HelloTeam Engagement
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/helloteam-engagement
+  category: Engagement & Culture
+  partner_domain: helloteam.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Hireflix
+  app: Hireflix
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/hireflix
+  category: Video Interviews
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Hireology
+  app: Hireology
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/hireology
+  category: Applicant Tracking Systems
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Human Interest
+  app: Human Interest
+  partner: human-interest
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/human-interest
+  category: Financial Benefits
+  partner_domain: humaninterest.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Humanity
+  app: Humanity Scheduling
+  partner: humanity
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/humanity
+  category: Time Tracking & Scheduling
+  partner_domain: humanity.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: imocha
+  app: iMocha
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/imocha
+  category: Assessments
+  partner_domain: imocha.io
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Indeed
+  app: Indeed
+  partner: indeed
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/indeed
+  category: Job Boards & Sourcing
+  partner_domain: indeed.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: JazzHR
+  app: JazzHR
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/jazz-hr
+  category: Applicant Tracking Systems
+  partner_domain: jazzhr.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Jobma
+  app: Jobma
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/jobma
+  category: Video Interviews
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: JobScore
+  app: JobScore
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/jobscore
+  category: Applicant Tracking Systems
+  partner_domain: jobscore.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Jobvite
+  app: Jobvite
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/jobvite
+  category: Applicant Tracking Systems
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: JumpCloud
+  app: JumpCloud
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/jumpcloud
+  category: Identity Management
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Lattice
+  app: Lattice
+  partner: lattice
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/lattice
+  category: Performance
+  partner_domain: lattice.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Lattice
+  app: Lattice Engagement
+  partner: lattice
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/lattice-engagement
+  category: Engagement & Culture
+  partner_domain: lattice.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Leapsome
+  app: Leapsome
+  partner: leapsome
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/leapsome
+  category: Performance
+  partner_domain: leapsome.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Lever
+  app: Lever
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/lever
+  category: Applicant Tracking Systems
+  partner_domain: lever.co
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Litmos LMS
+  app: Litmos
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/litmos
+  category: Learning & Training
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Lucidchart
+  app: Lucidchart
+  partner: lucidchart
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/lucidchart
+  category: Planning & Charting
+  partner_domain: lucidchart.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: AppColony
+  app: MakeShift
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/makeshift
+  category: Time Tracking & Scheduling
+  partner_domain: makeshift.ca
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Merge
+  app: Merge
+  partner: merge
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/merge
+  category: Developer Resources
+  partner_domain: merge.dev
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: NextGen Workforce
+  app: NextGen Workforce
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/nextgen-workforce
+  category: Time Tracking & Scheduling
+  partner_domain: ngworkforce.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Northpass
+  app: Northpass
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/northpass
+  category: Learning & Training
+  partner_domain: northpass.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Okta
+  app: Okta
+  partner: okta
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/okta
+  category: Identity Management
+  partner_domain: okta.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Deel Engage
+  app: Onboarding by Deel Engage
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/onboarding-by-roots
+  category: Onboarding
+  partner_domain: tryroots.io
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: OneLogin
+  app: OneLogin
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/onelogin
+  category: Identity Management
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Papaya Global
+  app: Papaya Global
+  partner: papaya-global
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/papaya-global
+  category: Global Payroll, Payroll, PEO
+  partner_domain: papayaglobal.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Payroll
+  app: Payroll
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/payroll
+  category: Payroll
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Payscale
+  app: Payscale
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/payscale
+  category: Compensation Software
+  partner_domain: '%e2%80%8bbamboohr.%e2%80%8bcom'
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: HR Performance Solutions
+  app: PerformancePRO
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/performancepro
+  category: Performance
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: PerformYard
+  app: PerformYard
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/performyard
+  category: Performance
+  partner_domain: performyard.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: PlanSource
+  app: PlanSource
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/plansource
+  category: Benefits Administration
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Primalogik
+  app: Primalogik
+  partner: null
+  partner_match: null
+  partner_candidate: freshdesk
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/primalogik
+  category: Performance
+  partner_domain: freshdesk.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Treehoppr
+  app: PTO by Deel Engage
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/pto-by-roots
+  category: Time Tracking & Scheduling
+  partner_domain: tryroots.io
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Pyn
+  app: Pyn
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/pyn
+  category: Communication
+  partner_domain: intercom.help
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Remote
+  app: Remote
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/remote
+  category: Payroll, Global Payroll
+  partner_domain: remote.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: RetroTax WOTC
+  app: RetroTax WOTC
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/retrotax
+  category: Tax Credits
+  partner_domain: retrotax-aci.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Rydoo
+  app: Rydoo
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/rydoo
+  category: Travel & Expense Management
+  partner_domain: rydoo.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: SAML
+  app: SAML
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/saml
+  category: Identity Management
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Self Management Group
+  app: Self Management Group
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/self-management-group
+  category: Assessments
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: BambooHR app for Slack
+  app: BambooHR app for Slack
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/slack
+  category: Communication
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Small Improvements
+  app: Small Improvements
+  partner: small-improvements
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/small-improvements
+  category: Performance
+  partner_domain: small-improvements.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: SmartRecruiters
+  app: SmartRecruiters
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/smartrecruiters
+  category: Applicant Tracking Systems
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Spark Hire, Inc.
+  app: Spark Hire
+  partner: spark-hire
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/spark-hire
+  category: Applicant Tracking Systems
+  partner_domain: sparkhire.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Synerion Agile Workforce
+  app: Synerion Agile Workforce
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/synerion-agile-workforce
+  category: Time Tracking & Scheduling
+  partner_domain: synerion.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Epignosis (vendor of TalentLMS)
+  app: TalentLMS
+  partner: talentlms
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/talentlms
+  category: Learning & Training
+  partner_domain: talentlms.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: TazWorks Software
+  app: TazWorks Software
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/tazworks-software
+  category: Background Checks
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: TimeRewards
+  app: TimeRewards
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/timerewards
+  category: Time Tracking & Scheduling
+  partner_domain: timerewards.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Traliant
+  app: Traliant
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/traliant
+  category: Learning & Training
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Travitor
+  app: Travitor
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/travitor
+  category: Learning & Training
+  partner_domain: '%e2%80%8bbamboohr.%e2%80%8bcom'
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Universal Background Screening
+  app: Universal Background Screening
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/universal-background-screening
+  category: Background Checks
+  partner_domain: universalbackground.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Verified First
+  app: Verified First
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/verified-first
+  category: Background Checks
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Workable Software Limited
+  app: Workable
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/workable
+  category: Applicant Tracking Systems
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: WorkRamp
+  app: WorkRamp
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/workramp
+  category: Learning & Training
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: WOTC
+  app: WOTC
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/wotc
+  category: Tax Credits
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Zapier
+  app: Zapier
+  partner: zapier
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/zapier
+  category: Integration Platforms
+  partner_domain: zapier.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: stratustime®
+  app: stratustime®
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/stratustime
+  category: Time Tracking & Scheduling
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: SimplyInsured
+  app: SimplyInsured
+  partner: simplyinsured
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/simplyinsured
+  category: Benefits Administration
+  partner_domain: simplyinsured.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Finch
+  app: Finch
+  partner: finch
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/finch
+  category: Developer Resources
+  partner_domain: tryfinch.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Aquera
+  app: Aquera
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/aquera
+  category: Identity Management
+  partner_domain: aquera.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Learn Amp
+  app: Learn Amp
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/learn-amp
+  category: Learning & Training
+  partner_domain: learnamp.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: WorkTango
+  app: WorkTango
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/worktango
+  category: Recognition & Rewards
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Nectar
+  app: Nectar
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/nectar
+  category: Recognition & Rewards, Engagement & Culture
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Microsoft Single Sign-On
+  app: Microsoft Single Sign-On
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/microsoft-single-sign-on
+  category: Identity Management
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Benefits Administration
+  app: Benefits Administration
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/bamboohr-benefits-administration
+  category: Benefits Administration
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Tovuti LMS
+  app: Tovuti LMS
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/tovutilms
+  category: Learning & Training
+  partner_domain: tovutilms.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Flexspring
+  app: Flexspring
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/flexspring
+  category: Integration Platforms
+  partner_domain: flexspring.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: OrgChart, LLC
+  app: OrgChart
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/orgchart
+  category: Planning & Charting
+  partner_domain: orgchartnow.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: WorkLinks
+  app: WorkLinks
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/worklinks
+  category: Payroll
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: LearnUpon
+  app: LearnUpon
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/learnupon
+  category: Learning & Training
+  partner_domain: learnupon.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Payroll Harmony
+  app: Payroll Harmony
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/payroll-harmony
+  category: Payroll, Integration Platforms
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Cronofy
+  app: Cronofy
+  partner: cronofy
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/cronofy
+  category: Applicant Tracking Systems
+  partner_domain: cronofy.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Oyster
+  app: Oyster
+  partner: oyster-hr
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/oyster
+  category: Global Payroll, Payroll, PEO
+  partner_domain: oysterhr.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Wishlist
+  app: Wishlist
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/wishlist
+  category: Recognition & Rewards
+  partner_domain: enjoywishlist.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: EasyLlama Inc.
+  app: EasyLlama
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/easyllama
+  category: Learning & Training, Safety & Compliance
+  partner_domain: easyllama.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Wellhub
+  app: Wellhub
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/wellhub
+  category: Health & Wellness
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Evolia
+  app: Evolia
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/evolia
+  category: Time Tracking & Scheduling
+  partner_domain: evolia.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Assemble
+  app: Assemble
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/assemble
+  category: Compensation Software
+  partner_domain: assemble.inc
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Zevo Benefits, Inc.
+  app: Zevo Benefits
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/zevo-benefits
+  category: Benefits Administration
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Motivosity
+  app: Motivosity
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/motivosity
+  category: Recognition & Rewards
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Teamtailor
+  app: Teamtailor
+  partner: teamtailor
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/teamtailor
+  category: Applicant Tracking Systems
+  partner_domain: teamtailor.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Accu-Time Systems, Inc.
+  app: Accu-Time Systems
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/accu-time-systems
+  category: Time Tracking & Scheduling
+  partner_domain: accu-time.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: PayCaptain
+  app: PayCaptain
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/paycaptain
+  category: Payroll
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: SkyPrep
+  app: SkyPrep
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/skyprep
+  category: Learning & Training
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: FaceUp
+  app: FaceUp
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/faceup
+  category: Safety & Compliance
+  partner_domain: faceup.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Accord Systems, LLC
+  app: Accord
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/accord
+  category: Safety & Compliance, Benefits Administration
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Comprehensive
+  app: Comprehensive
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/comprehensive
+  category: Compensation Software
+  partner_domain: comprehensive.io
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Expiration Reminder
+  app: Expiration Reminder
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/expiration-reminder
+  category: Safety & Compliance
+  partner_domain: expirationreminder.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: BIS Safety Software
+  app: BIS Safety Software
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/bis-safety-software
+  category: Learning & Training
+  partner_domain: bistrainer.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Awardco
+  app: Awardco
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/awardco
+  category: Recognition & Rewards
+  partner_domain: site.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Blissbook
+  app: Blissbook
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/blissbook
+  category: Safety & Compliance
+  partner_domain: blissbook.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: BambooHR app for ZenDesk
+  app: BambooHR app for ZenDesk
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/zendesk
+  category: Communication
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: RoboMQ
+  app: Hire2Retire
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/hire2retire
+  category: Identity Management
+  partner_domain: robomq.io
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: QuickBooks Online
+  app: QuickBooks Online
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/quickbooks-online-general-ledger
+  category: Accounting
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Matter
+  app: Matter
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/matter
+  category: Recognition & Rewards, Engagement & Culture
+  partner_domain: matterapp.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Engine
+  app: Engine
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/engine
+  category: Travel & Expense Management
+  partner_domain: site.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Salary.com
+  app: Salary.com
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/comp-analyst
+  category: Compensation Software
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: The Predictive Index
+  app: The Predictive Index
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/the-predictive-index
+  category: Assessments
+  partner_domain: integrations.guide
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Aeqium
+  app: Aeqium
+  partner: null
+  partner_match: null
+  partner_candidate: loom
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/aeqium
+  category: Compensation Software
+  partner_domain: loom.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: ZincWork
+  app: Zinc
+  partner: zinc
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/zinc
+  category: Background Checks
+  partner_domain: zincwork.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: KLF Group
+  app: Applauz
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/applauz
+  category: Recognition & Rewards, Engagement & Culture
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Tray.ai
+  app: Tray.ai
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/trayai
+  category: SaaS Operations Management
+  partner_domain: tray.io
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Xoxoday
+  app: Xoxoday Empuls
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/xoxoday-empuls
+  category: Recognition & Rewards
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Sterling Brokers
+  app: Sterling Brokers
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/sterling-brokers
+  category: Financial Benefits, Benefits Administration
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Yoffix
+  app: Yoffix
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/yoffix
+  category: Planning & Charting
+  partner_domain: yoffix.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: VirgilHR
+  app: VirgilHR
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/virgilhr
+  category: Compliance, Services
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: AccuSourceHR
+  app: AccusourceHR
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/accusourcehr
+  category: Background Checks
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Cornerstone OnDemand
+  app: Cornerstone Galaxy Accelerate
+  partner: null
+  partner_match: null
+  partner_candidate: vidyard
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/cornerstone-galaxy-accelerate
+  category: Learning & Training
+  partner_domain: vidyard.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Xero (General Ledger)
+  app: Xero (General Ledger)
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/xero-general-ledger
+  category: Accounting
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Pingboard
+  app: Workleap
+  partner: null
+  partner_match: null
+  partner_candidate: workleap
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/workleap
+  category: Engagement & Culture, Performance, Compensation Software
+  partner_domain: workleap.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: LinkedIn Premium Job Ads
+  app: LinkedIn Premium Job Ads
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/linkedin
+  category: Job Boards & Sourcing
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Xero UK Payroll Integration
+  app: Xero UK Payroll Integration
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/xero-uk-payroll
+  category: Payroll
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: PayFit
+  app: PayFit
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/payfit
+  category: Payroll
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Built
+  app: Built
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/built
+  category: Planning & Charting
+  partner_domain: builtapp.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Bucketlist Rewards
+  app: Bucketlist Rewards
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/bucketlist-rewards
+  category: Recognition & Rewards
+  partner_domain: bucketlistrewards.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: PeopleInsight by HireRoad
+  app: PeopleInsight
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/peopleinsight
+  category: Reporting & Analytics
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Xero Australia Payroll Integration
+  app: Xero Australia Payroll Integration
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/xero-australia-payroll
+  category: Payroll
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Pebl Global Work Platform ™
+  app: Pebl Global Work Platform ™
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/pebl-global-work-platform
+  category: PEO
+  partner_domain: hellopebl.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: VisionLink
+  app: VisionLink
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/visionlink
+  category: Compensation Software
+  partner_domain: hubspotusercontent-na1.net
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Netsuite
+  app: Netsuite
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/netsuite-employee-sync
+  category: Accounting
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: BambooHR® I-9 & E-Verify
+  app: BambooHR® I-9 & E-Verify
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/bamboohr-i9-everify
+  category: Onboarding, Compliance
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Swipeclock
+  app: WorkforceHub (powered by Swipeclock)
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/workforce-hub-by-swipeclock
+  category: Time Tracking & Scheduling
+  partner_domain: payrollservers.info
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Kudos
+  app: Kudos®
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/kudos
+  category: Recognition & Rewards
+  partner_domain: kudosnow.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: BambooHR® Compliance Training Powered by EasyLLama
+  app: BambooHR® Compliance Training Powered by EasyLLama
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/bamboohr-compliance-training
+  category: Compliance
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: NetSuite (General Ledger)
+  app: NetSuite (General Ledger)
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/netsuite-general-ledger
+  category: Accounting
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Connecteam
+  app: Connecteam
+  partner: connecteam
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/connecteam
+  category: Time Tracking & Scheduling
+  partner_domain: connecteam.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Express Evaluations
+  app: Express Evaluations
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/express-evaluations
+  category: Performance
+  partner_domain: goconsensus.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: AirMason
+  app: AirMason
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/airmason
+  category: Safety & Compliance
+  partner_domain: airmason.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Trainual
+  app: Trainual
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/trainual
+  category: Learning & Training
+  partner_domain: trainual.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Benefit Allocation Systems
+  app: Benefit Allocation Systems
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/benefit-allocation-systems
+  category: Compliance
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Sage Intacct (General Ledger)
+  app: Sage Intacct (General Ledger)
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/sage-intacct-general-ledger
+  category: Accounting
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: SEEK
+  app: SEEK
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/seek
+  category: Job Boards & Sourcing
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Globalization Partners
+  app: G-P Global
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/g-p
+  category: Global Payroll
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Perk
+  app: Perk
+  partner: travelperk
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/perk
+  category: Travel & Expense Management
+  partner_domain: travelperk.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: FaceUp
+  app: ProProfs Training Maker
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/proprofs
+  category: Learning & Training
+  partner_domain: proprofstraining.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: BambooHR® Physical Clocks
+  app: BambooHR® Physical Clocks
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/bamboohr-time-clocks
+  category: Time Tracking & Scheduling
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: RemoFirst
+  app: RemoFirst
+  partner: remofirst
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/remofirst
+  category: Global Payroll
+  partner_domain: remofirst.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Payroll Guardian
+  app: Payroll Guardian
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/payroll-guardian
+  category: Payroll
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Xero New Zealand Payroll Integration
+  app: Xero New Zealand Payroll Integration
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/xero-nz-payroll
+  category: Payroll
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Clair
+  app: Clair
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/bamboohr-on-demand-pay
+  category: Financial Benefits
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Primo
+  app: Primo
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/primo
+  category: IT and Device Management, Identity Management
+  partner_domain: getprimo.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Anuvi
+  app: Anuvi COBRA
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/anuvi-cobra
+  category: Benefits Administration, Compliance
+  partner_domain: intercom.help
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Doneboard
+  app: Doneboard
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/doneboard
+  category: IT and Device Management
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: BambooHR® Background Checks | Your Favorite Integrated HR Apps
+  app: BambooHR® Background Checks | Your Favorite Integrated HR Apps
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/bamboohr-background-checks
+  category: Background Checks
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: OurPeople
+  app: OurPeople
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/ourpeople
+  category: Communication
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: FaceUp
+  app: FitOn
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/fiton
+  category: Health & Wellness
+  partner_domain: fitonhealth.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Risotto
+  app: Risotto
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/risotto
+  category: Internal Ticketing, AI
+  partner_domain: tryrisotto.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Gardium Sécurité Inc.
+  app: Gardium Background Checks
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/gardium
+  category: Safety & Compliance, Background Checks
+  partner_domain: gardium.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Cube
+  app: Cube Software
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/cube-software
+  category: Reporting & Analytics
+  partner_domain: cubesoftware.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: CDL Suite
+  app: CDL Suite
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/cdl-suite
+  category: Safety & Compliance
+  partner_domain: cdlsuite.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Connex
+  app: Connex Digital
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/connex-digital
+  category: Integration Platforms
+  partner_domain: connex.digital
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: BambooHR® Global Employment
+  app: BambooHR® Global Employment
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/bamboohr-global-employment
+  category: Global Payroll
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: FaceUp
+  app: Virvell
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/virvell
+  category: AI, Background Checks
+  partner_domain: virvell.ai
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Timeero
+  app: Timeero
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/timeero
+  category: Time Tracking & Scheduling
+  partner_domain: timeero.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Pinpoint
+  app: Pinpoint
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/pinpoint
+  category: Applicant Tracking Systems
+  partner_domain: pinpoint.support
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: CandorIQ
+  app: CandorIQ
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/candoriq
+  category: Compensation Software
+  partner_domain: notion.site
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: VidCruiter
+  app: VidCruiter
+  partner: vidcruiter
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/vidcruiter
+  category: Video Interviews, Assessments
+  partner_domain: vidcruiter.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Donut
+  app: Donut
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/donut
+  category: AI
+  partner_domain: donut.ai
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Projectworks
+  app: Projectworks
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/projectworks
+  category: Time Tracking & Scheduling
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: 15five
+  app: 15Five AI Impact Service
+  partner: 15five
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/15five-ai-impact-service
+  category: AI
+  partner_domain: 15five.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Multiplier
+  app: Multiplier
+  partner: multiplier
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/multiplier
+  category: Global Payroll
+  partner_domain: usemultiplier.com
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: BambooHR Expert Services
+  app: BambooHR Expert Services
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/bamboohr-expert-services
+  category: Services
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: ZipRecruiter
+  app: ZipRecruiter
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/ziprecruiter
+  category: Job Boards & Sourcing
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Pult GmbH
+  app: PULT
+  partner: null
+  partner_match: null
+  partner_candidate: kombo
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/pult
+  category: Planning & Charting
+  partner_domain: kombo.dev
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Tellent Recruitee
+  app: Tellent Recruitee
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/tellent-recruitee
+  category: Applicant Tracking Systems
+  partner_domain: youtu.be
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: SoHo Dragon
+  app: ResumeSift88
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/resumesift88
+  category: Applicant Tracking Systems, AI
+  partner_domain: sohodragon.nyc
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Emissary
+  app: Emissary Advanced Texting
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.bamboohr.com/integrations/listings/emissary-advanced-texting
+  category: Communication, ATS
+  partner_domain: emissary.ai
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
+- partner_name: Employee Navigator
+  app: Employee Navigator
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://www.bamboohr.com/integrations/listings/employee-navigator
+  category: Benefits Administration
+  partner_domain: null
+  detected_by: sweep-hr-stores.py
+  detected: '2026-10-12'
