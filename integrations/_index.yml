@@ -176,7 +176,6 @@
   arazzo: null
 - slug: bamboohr-bonusly
   label: Bonusly
-  partner: bonusly
   partner_name: Bonusly
   category: Recognition & Rewards
   type: marketplace
@@ -239,7 +238,6 @@
   arazzo: null
 - slug: bamboohr-comeet
   label: Comeet
-  partner: comeet
   partner_name: Comeet
   category: Applicant Tracking Systems
   type: marketplace
@@ -277,7 +275,6 @@
   arazzo: null
 - slug: bamboohr-cyberark-identity
   label: CyberArk Identity
-  partner: cyberark-identity
   partner_name: CyberArk Identity
   category: Identity Management
   type: marketplace
@@ -572,7 +569,6 @@
   arazzo: null
 - slug: bamboohr-jumpcloud
   label: JumpCloud
-  partner: jumpcloud
   partner_name: JumpCloud
   category: Identity Management
   type: marketplace
@@ -611,7 +607,6 @@
   arazzo: null
 - slug: bamboohr-lever
   label: Lever
-  partner: lever
   partner_name: Lever
   category: Applicant Tracking Systems
   type: marketplace
@@ -723,7 +718,6 @@
   arazzo: null
 - slug: bamboohr-onelogin
   label: OneLogin
-  partner: onelogin
   partner_name: OneLogin
   category: Identity Management
   type: marketplace
@@ -797,7 +791,6 @@
   arazzo: null
 - slug: bamboohr-plansource
   label: PlanSource
-  partner: plansource
   partner_name: PlanSource
   category: Benefits Administration
   type: marketplace
@@ -931,7 +924,6 @@
   arazzo: null
 - slug: bamboohr-smartrecruiters
   label: SmartRecruiters
-  partner: smartrecruiters
   partner_name: SmartRecruiters
   category: Applicant Tracking Systems
   type: marketplace
@@ -1066,7 +1058,6 @@
   arazzo: null
 - slug: bamboohr-workramp
   label: WorkRamp
-  partner: workramp
   partner_name: WorkRamp
   category: Learning & Training
   type: marketplace
@@ -1336,7 +1327,6 @@
   arazzo: null
 - slug: bamboohr-wellhub
   label: Wellhub
-  partner: wellhub
   partner_name: Wellhub
   category: Health & Wellness
   type: marketplace
@@ -1566,7 +1556,6 @@
   arazzo: null
 - slug: bamboohr-matter
   label: Matter
-  partner: matter
   partner_name: Matter
   category: Recognition & Rewards, Engagement & Culture
   type: marketplace
@@ -1603,7 +1592,6 @@
   arazzo: null
 - slug: bamboohr-the-predictive-index
   label: The Predictive Index
-  partner: the-predictive-index
   partner_name: The Predictive Index
   category: Assessments
   type: marketplace
@@ -1653,7 +1641,6 @@
   arazzo: null
 - slug: bamboohr-tray-ai
   label: Tray.ai
-  partner: tray-ai
   partner_name: Tray.ai
   category: SaaS Operations Management
   type: marketplace
@@ -1666,7 +1653,6 @@
   arazzo: null
 - slug: bamboohr-xoxoday
   label: Xoxoday
-  partner: xoxoday
   partner_name: Xoxoday
   category: Recognition & Rewards
   type: marketplace
@@ -1787,7 +1773,6 @@
   arazzo: null
 - slug: bamboohr-payfit
   label: PayFit
-  partner: payfit
   partner_name: PayFit
   category: Payroll
   type: marketplace
@@ -2163,7 +2148,6 @@
   arazzo: null
 - slug: bamboohr-ourpeople
   label: OurPeople
-  partner: ourpeople
   partner_name: OurPeople
   category: Communication
   type: marketplace
@@ -2260,7 +2244,6 @@
   arazzo: null
 - slug: bamboohr-pinpoint
   label: Pinpoint
-  partner: pinpoint
   partner_name: Pinpoint
   category: Applicant Tracking Systems
   type: marketplace
