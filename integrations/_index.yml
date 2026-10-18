@@ -2467,7 +2467,7 @@
     - alpha
     in_cloud: true
     builder: unknown (community connector; contributor not in the record)
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: bamboohr-fivetran
   label: Fivetran
@@ -2493,7 +2493,7 @@
     - connectors/applications/bamboohr
     vendor_link: https://www.bamboohr.com/
     builder: Fivetran
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: bamboohr-meltano
   label: Meltano
@@ -2525,7 +2525,7 @@
     - bronze
     - gold
     builder: 'community (Meltano Hub variant maintainers: airbyte, autoidm)'
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: bamboohr-slack-own
   label: Slack (own)
