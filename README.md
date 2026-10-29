@@ -1,4 +1,4 @@
-# BambooHR (bamboohr)
+# BambooHR
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,92 +66,128 @@
 
 BambooHR is a cloud-based human resources software platform for small and medium-sized businesses, providing core HR, applicant tracking, onboarding, time tracking, payroll, performance management, and employee self-service. The BambooHR REST API allows developers to read and update employee data, generate reports, manage time-off, and integrate with the HRIS using either OAuth 2.0 or per-customer API keys over HTTPS Basic Auth.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/bamboohr/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/bamboohr/refs/heads/main/apis.yml)
+**Areas:** Human Resources · HRIS · Payroll · Time Tracking · Applicant Tracking · Performance Management
 
-## Scope
+## BambooHR on APIs.io
 
-- **Type:** Index
+Everything profiled for BambooHR is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bamboohr/](https://apis.io/providers/bamboohr/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (8)
 
-- HR
-- HRIS
-- Human Resources
-- Payroll
-- Time Tracking
-- Applicant Tracking
-- Performance Management
+- [BambooHR REST API](https://apis.io/apis/bamboohr/rest-api/) — RESTful HTTPS API for accessing and manipulating employee data, directories, time-off, reports, and other BambooHR HRIS resources. Supports OAuth 2.0 for…
+- [BambooHR Webhooks](https://apis.io/apis/bamboohr/webhooks/) — Event-driven webhook surface for BambooHR. Webhooks fire when monitored fields change on Employee records (and when employee records are created or…
+- [BambooHR Directory API](https://apis.io/apis/bamboohr/bamboohr-directory-api/) — Employee directory
+- [BambooHR Employees API](https://apis.io/apis/bamboohr/bamboohr-employees-api/) — Employee records
+- [BambooHR Files API](https://apis.io/apis/bamboohr/bamboohr-files-api/) — Employee files
+- [BambooHR Meta API](https://apis.io/apis/bamboohr/bamboohr-meta-api/) — Field metadata
+- [BambooHR Reports API](https://apis.io/apis/bamboohr/bamboohr-reports-api/) — Custom and standard reports
+- [BambooHR Time Off API](https://apis.io/apis/bamboohr/bamboohr-time-off-api/) — Time-off requests and balances
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-11
-- **Modified:** 2026-05-30
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### GraphQL (1)
 
-### BambooHR REST API
+GraphQL schemas.
 
-RESTful HTTPS API for accessing and manipulating employee data, directories, time-off, reports, and other BambooHR HRIS resources. Supports OAuth 2.0 for multi-customer apps and API key (HTTP Basic) for single-customer integrations.
+- [Moved to /providers/bamboohr/](https://apis.io/graphqls/bamboohr/bamboohr-graphql/)
 
-- **Human URL:** [https://documentation.bamboohr.com/docs](https://documentation.bamboohr.com/docs)
-- **Base URL:** `https://api.bamboohr.com/api/gateway.php`
+#### Agentic access (1)
 
-#### Tags
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- HR
-- Employees
-- Time Off
-- Reports
-- Directory
+- [Bamboohr Agentic Access](https://apis.io/agentic-access/bamboohr/bamboohr-agentic-access/)
 
-#### Properties
+#### Collections (8)
 
-- [Documentation](https://documentation.bamboohr.com/docs)
-- [API Reference](https://documentation.bamboohr.com/reference)
-- [Getting Started](https://documentation.bamboohr.com/docs/getting-started)
-- [Authentication](https://documentation.bamboohr.com/docs/getting-started)
-- [S D Ks](https://documentation.bamboohr.com/docs/sdks)
-- [Postman Collection](collections/bamboohr.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/bamboohr.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Postman and Open Collection request collections.
 
-### BambooHR Webhooks
+- [BambooHR REST API](https://apis.io/collections/bamboohr/open-bamboohr/)
+- [BambooHR Webhooks](https://apis.io/collections/bamboohr/open-bamboohr-asyncapi/)
+- [BambooHR REST Directory API](https://apis.io/collections/bamboohr/open-bamboohr-directory-api/)
+- [BambooHR REST Directory Employees API](https://apis.io/collections/bamboohr/open-bamboohr-employees-api/)
+- [BambooHR REST Directory Files API](https://apis.io/collections/bamboohr/open-bamboohr-files-api/)
+- [BambooHR REST Directory Meta API](https://apis.io/collections/bamboohr/open-bamboohr-meta-api/)
+- [BambooHR REST Directory Reports API](https://apis.io/collections/bamboohr/open-bamboohr-reports-api/)
+- [BambooHR REST Directory Time Off API](https://apis.io/collections/bamboohr/open-bamboohr-time-off-api/)
 
-Event-driven webhook surface for BambooHR. Webhooks fire when monitored fields change on Employee records (and when employee records are created or deleted). Subscribers register an HTTPS URL per monitored field; BambooHR POSTs an event-based or field-based JSON payload carrying the employee identifier and the list of changed fields, signed with an SHA-256 HMAC.
+#### Security (4)
 
-- **Human URL:** [https://documentation.bamboohr.com/docs/webhooks](https://documentation.bamboohr.com/docs/webhooks)
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags
+- [Bamboohr Authentication](https://apis.io/security/bamboohr/bamboohr-authentication/)
+- [Bamboohr Domain Security](https://apis.io/security/bamboohr/bamboohr-domain-security/)
+- [Bamboohr Trust Center](https://apis.io/security/bamboohr/bamboohr-trust-center/)
+- [Bamboohr Vulnerability Disclosure](https://apis.io/security/bamboohr/bamboohr-vulnerability-disclosure/)
 
-- Webhooks
-- Events
-- Employees
-- HRIS
+#### OAuth scopes (1)
 
-#### Properties
+The permissions the API asks for.
 
-- [Documentation](https://documentation.bamboohr.com/docs/webhooks)
-- [AsyncAPI](https://raw.githubusercontent.com/api-evangelist/bamboohr/refs/heads/main/openapi/bamboohr-asyncapi.yml) — [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/latest)
-- [Documentation](https://documentation.bamboohr.com/docs/event-based-webhooks)
-- [Documentation](https://documentation.bamboohr.com/docs/field-based-webhooks)
-- [Documentation](https://documentation.bamboohr.com/docs/global-webhooks)
-- [Documentation](https://documentation.bamboohr.com/docs/permissioned-webhooks)
-- [Postman Collection](collections/bamboohr.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/bamboohr.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Bamboohr Scopes](https://apis.io/scopes/bamboohr/bamboohr-scopes/)
 
-## Common Properties
+## Where to find this API
 
-- [GitHub Organization](https://github.com/BambooHR)
-- [LinkedIn](https://www.linkedin.com/company/bamboohr)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.bamboohr.com/)
 - [Documentation](https://documentation.bamboohr.com/docs)
-- [Developer  Portal](https://developers.bamboohr.com/)
-- [API Reference](https://documentation.bamboohr.com/reference)
-- [Sign Up](https://www.bamboohr.com/signup/)
+- [API reference](https://documentation.bamboohr.com/reference)
 - [Pricing](https://www.bamboohr.com/pricing/)
 - [Support](https://help.bamboohr.com/)
-- [L L Ms Txt](https://developers.bamboohr.com/llms.txt)
+- [Blog](https://www.bamboohr.com/blog/)
+- [GitHub](https://github.com/BambooHR)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 33.9** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 50.2 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 34.5 |
+| Access clarity | 31.6 |
+
+**Agent readiness 26.2** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | negotiable (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | unknown |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | documented (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 32.4** — Employment & Payroll
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bamboohr/](https://apis.io/providers/bamboohr/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for BambooHR: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bamboohr/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
